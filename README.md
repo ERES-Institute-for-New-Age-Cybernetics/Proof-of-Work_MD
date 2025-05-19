@@ -146,46 +146,32 @@ The MANDALA-VERTECA framework fulfills the ERES vision by creating a **bio-ecolo
 *JAS Claude.ai/ChatGPT LLM (ERES_Metaphysics: Copy & Paste)*  
 [https://claude.ai/public/artifacts/1d86fd58-c881-4899-96de-f44f83760e52](https://claude.ai/public/artifacts/1d86fd58-c881-4899-96de-f44f83760e52)
 
-# Proof-of-Work_MD
 
-## 📜 Overview
+# 🌍 Proof-of-Work_MD
 
-Welcome to the **Proof-of-Work_MD** repository, part of the ERES Institute for New Age Cybernetics. This project is dedicated to demonstrating and documenting foundational concepts of *EarnedPath*, *Bio-Ecologic Ratings Codex (BERC)*, and *Graceful Contribution Formula (GCF)*—pioneering frameworks central to the evolution of *New Age Cybernetics*.
-
-This repository represents a public and transparent record of intellectual, social, and systemic efforts to align personal merit with global regenerative goals through realtime documentation and simulation. It serves as a knowledge artifact—a *Proof of Work*—in markdown format, preserving intentional progress and strategic vision.
+Welcome to the **Proof-of-Work_MD** repository from the [ERES Institute for New Age Cybernetics](https://github.com/ERES-Institute-for-New-Age-Cybernetics). This space serves as a digital ledger and documentation center for the advancement of human merit, socio-ecological regeneration, and simulation-based governance systems.
 
 ---
 
-## 🔍 Purpose
+## 🧠 What Is This?
 
-The primary purposes of this repository are:
+**Proof-of-Work_MD** is a Markdown-based repository to record and archive individual or institutional **contributions, progress, and concepts** related to:
 
-- To **record personal and institutional contributions** as transparent Markdown narratives.
-- To **serve as an auditable proof-of-work ledger** in the context of ERES Institute's EarnedPath philosophy.
-- To **facilitate collaboration**, simulation, and iteration within the New Age Cybernetics framework.
+- **EarnedPath**: A real-time system of measurable merit.
+- **Graceful Contribution Formula (GCF)**: A humane model integrating UBI, Merit, Investments, and Awards.
+- **Bio-Ecologic Ratings Codex (BERC)**: A regenerative index of impact, intelligence, and design.
+- **Vacationomics**: Empowering global equity through rest, rejuvenation, and distributed labor.
 
----
-
-## 🌐 Key Concepts
-
-### 🔹 EarnedPath (EP)
-A realtime, merit-driven learning and contribution system that integrates Critical Path Methodologies with socio-economic regeneration strategies.
-
-### 🔹 Graceful Contribution Formula (GCF)
-A formula expressing:  
-**UBI + Merit × Investment(s) ± Awards**  
-Designed to balance fairness, contribution, and reward across populations.
-
-### 🔹 Bio-Ecologic Ratings Codex (BERC)
-A metric and standards framework for assessing intelligent design, eco-alignment, and social equity in systems and behaviors.
+All of this is part of a greater framework for what we call **New Age Cybernetics**—a civilization-scale project to design the future responsibly and equitably.
 
 ---
 
-## 📁 Directory Structure
+## 🗂 Repository Structure
 
 ```bash
 Proof-of-Work_MD/
-├── README.md          # This file
-├── [Your_Work].md     # Individual or group submissions demonstrating EP proof-of-work
-├── templates/         # Markdown templates for submission
-└── docs/              # Supporting files and vision documents
+├── README.md               # This file
+├── submissions/            # Individual markdown contributions
+├── templates/              # Markdown templates for Proof-of-Work journaling
+├── vision/                 # ERES strategic concepts and documents
+└── meta/                   # Logs, protocols, and metadata
