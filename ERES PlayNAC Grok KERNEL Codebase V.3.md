@@ -1,5 +1,5 @@
 ﻿# **ERES PlayNAC KERNEL** 
-**A Biocybernetic Proof-of-Work Runtime for New Age Cybernetics** *Fig 1. System Architecture (JAS Links in orange, VERTECA axes in blue) ![ref1]*
+**A Biocybernetic Proof-of-Work Runtime for New Age Cybernetics** *Fig 1. System Architecture (JAS Links in orange, VERTECA axes in blue) *
 ## **Overview** 
 The **ERES PlayNAC KERNEL** is the core implementation of the **ERES Institute for New Age Cybernetics**, unifying: 
 
@@ -54,8 +54,8 @@ Lightweight **QuestionAnswer** system, regulated by **Aura-Tech** and **GAIA**.
 Open Source Creative Commons /2025 
 
 
-ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) ![ref1]
-## **Key Features ![ref1]**
+ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) 
+## **Key Features**
 - **Bioenergetic Validation**: Uses **Aura-Tech** (EEG) for **BioPoW**, calculating Entropic Potential (EP) to validate contributions. 
 - **4D VR Environment**: Visualizes **THOW** to **Fly & Dive RV** ecosystems, driven by **MediaProcessor** and Three.js. 
 - **Voice Navigation**: **VERTECA**-enabled hands-free control for immersive **ERES** learning. 
@@ -77,7 +77,7 @@ pip install -r requirements.txt --extra-index-url https://bioaura.tech/sdk
 - Python 3.8+ 
 - numpy, opencv-python, speechrecognition, pyaudio, three.js (via CDN) 
 - Hypothetical pyaura.sdk for EEG integration 
-- Optional: Muse 2 EEG device, RTX 40-series GPU ![ref1]
+- Optional: Muse 2 EEG device, RTX 40-series GPU 
 ## **Usage** 
 ### **Run Bio-Mining Node** 
 python -m playnac\_kernel --bio-device muse:// --vacationomics-mode beach --ep-gerp-ratio 0.618 
@@ -96,7 +96,7 @@ python main\_ship\_ai.py **Voice Commands**:
 
 EEG) 
 
-Media FPS @ 4K  24 FPS (RTX 4090) JAS Graph TPS  1,500 edges/sec Voice Processing  <1s latency ![ref1]
+Media FPS @ 4K  24 FPS (RTX 4090) JAS Graph TPS  1,500 edges/sec Voice Processing  <1s latency>
 ## **Codebase** 
 ### **playnac\_kernel.py** 
 #!/usr/bin/env python3 
