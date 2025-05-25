@@ -17,13 +17,13 @@ The **ERES PlayNAC KERNEL** is the core implementation of the **ERES Institute f
 
 The KERNEL supports a **Bio-Ecologic Economy (BEE)**, scaling from **Tiny Homes On Wheels (THOW)** to **Fly & Dive RVs**, with **Vacationomics** ensuring equitable work-leisure balance. The binary symmetry **1001 0110 = 0110 1001** reflects balanced public-private/private-public interfaces, regulated by **Aura-Tech** and the **Global Actuary Investor Authority (GAIA)** to prevent harm. 
 
-ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) ![ref1]
+ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) 
 ## **Modules** 
 
 Open Source Creative Commons /2025 
 
 
-ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) ![ref1]
+ERES Institute for New Age Cybernetics ~ PlayNAC Grok “KERNEL” Codebase (V.3) 
 
 **Module** playnac\_kernel.py 
 
