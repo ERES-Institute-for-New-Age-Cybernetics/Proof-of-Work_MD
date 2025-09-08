@@ -467,8 +467,8 @@ The ERES Institute maintains a **1000-Year Future Map** that extends our plannin
 **Joseph A. Sprute**  
 Founder & Research Director  
 ERES Institute for New Age Cybernetics  
-📧 Email: [contact@eres-institute.org]  
-🔗 LinkedIn: [josephsprute](https://www.linkedin.com/in/josephsprute)
+📧 Email: [eresmaestro@gmail.com]  
+🔗 LinkedIn: [boycotting)
 
 ### 🏛️ Institutional Inquiries
 - **Research Collaborations:** research@eres-institute.org
