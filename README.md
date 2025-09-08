@@ -471,10 +471,10 @@ ERES Institute for New Age Cybernetics
 🔗 LinkedIn: [boycotting)
 
 ### 🏛️ Institutional Inquiries
-- **Research Collaborations:** research@eres-institute.org
-- **Municipal Partnerships:** municipalities@eres-institute.org  
-- **Pilot Community Development:** pilots@eres-institute.org
-- **Media & Press:** press@eres-institute.org
+- **Research Collaborations:** eresmaestro@gmail.com
+- **Municipal Partnerships:** eresmaestro@gmail.com  
+- **Pilot Community Development:** eresmaestro@gmail.com
+- **Media & Press:** eresmaestro@gmail.com
 
 ### 💻 Technical Support
 - **GitHub Issues:** [Repository Issues](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD/issues)
