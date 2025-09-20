@@ -141,8 +141,7 @@ The shift from GDP to NBERS is more than a change of measurement. It represents 
 ## **References**
 
 * ERES Institute for New Age Cybernetics. *ERES BEST Draft*  
-   ERES BEST DRAFT  
-  .
+   ERES BEST DRAFT
 
 * ERES Institute. *Proof-of-Work Repository*. GitHub: [https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work\_MD](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
 
