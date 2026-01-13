@@ -1,0 +1,245 @@
+====================================================================================================
+ERES ARCHIVE - CATEGORIZED FILE LISTING
+====================================================================================================
+
+====================================================================================================
+ARI AURA (16 files, 413.9KB)
+====================================================================================================
+  [   13.9KB]  ARI_Dashboard_Medium_Post.markdown
+  [   13.6KB]  ARI_White_Paper_S3_Cities_2025.markdown
+  [   15.8KB]  ERES ARI Application Framework.md
+  [   55.5KB]  ERES ARI Draft.md
+  [   20.6KB]  ERES ARI E-Manual V.1.md
+  [   22.9KB]  ERES ARI E-Manual V.2.md
+  [   23.3KB]  ERES ARI Empirics.md
+  [   14.8KB]  ERES ARI Framework.md
+  [   20.6KB]  ERES Aura Hypothesis.md
+  [    5.9KB]  ERES Aura Olfactory.md
+  [    7.7KB]  ERES Aura Olfactory2.md
+  [   15.3KB]  ERES Claude ARI Report.md
+  [   61.8KB]  ERES DeepSeek ARI Production.md
+  [   17.0KB]  ERES Grok ARI.md
+  [   28.6KB]  ERES PlayNAC ARI _KERNEL_ (Version 8.0) Addendum.md
+  [   76.5KB]  ERES PlayNAC ARI _KERNEL_ (Version 8.0).md
+
+====================================================================================================
+BERA (4 files, 199.3KB)
+====================================================================================================
+  [   30.2KB]  BERA_Complete_Report (1).md
+  [   30.2KB]  BERA_Complete_Report.md
+  [   46.3KB]  BERA_WhitePaper_v1.0.md
+  [   92.6KB]  ERES BERA SSRN Notes.md
+
+====================================================================================================
+PLAYNAC KERNEL (11 files, 169.4KB)
+====================================================================================================
+  [   16.2KB]  ERES Article 251 v2.0_ FDRV HFVN Semiosphere PlayNAC .md
+  [   14.9KB]  ERES Article 251_ FDRV HFVN Semiosphere PlayNAC .md
+  [   17.6KB]  ERES Article 252 v2.0_ EMA VERTECA PlayNAC Perciphere EP.md
+  [   10.1KB]  ERES Article 252_ EMA VERTECA PlayNAC Perciphere EP.md
+  [   10.8KB]  ERES Claude PlayNAC _KERNEL_ Codebase v1.0.md
+  [    8.3KB]  ERES PlayNAC Cryptography.md
+  [   29.7KB]  ERES PlayNAC Smart City Framework with EP GERP Vacationomics.md
+  [   17.3KB]  ERES PlayNAC Work Specificity.md
+  [   28.7KB]  ERES PlayNAC _Specificity_.md
+  [   11.7KB]  PlayNAC-KERNEL-White-Paper.markdown
+  [    4.4KB]  README_PlayNAC-KERNEL_UPDATED.md
+
+====================================================================================================
+CONSTITUTIONAL GOVERNANCE (7 files, 91.5KB)
+====================================================================================================
+  [    7.9KB]  ERES AOC ARC 001.md
+  [    6.4KB]  ERES AOC ARC PAC .md
+  [   12.3KB]  ERES AOC PAC (v1.0).md
+  [   29.0KB]  ERES AOC PAC.md
+  [   17.9KB]  ERES Article 253 v2.0_ Exit GSSG Talonics Protosphere GERP.md
+  [   10.0KB]  ERES Article 253_ Exit GSSG Talonics Protosphere GERP.md
+  [    7.8KB]  ERES NAC Constitution.md
+
+====================================================================================================
+ECONOMICS MERITCOIN (1 files, 175.1KB)
+====================================================================================================
+  [  175.1KB]  ERES Meritcoin Cryptocurrency RT Media — Chapter Outline.md
+
+====================================================================================================
+ENVIRONMENTAL PBJ (1 files, 15.1KB)
+====================================================================================================
+  [   15.1KB]  PBJ_Tri-Codex_Complete.md
+
+====================================================================================================
+META FRAMEWORKS (6 files, 160.2KB)
+====================================================================================================
+  [   53.1KB]  ERES BEST-SOUND-GOOD Ontology.md
+  [   46.8KB]  ERES GAIA EDF Core Def-Rel.md
+  [    7.1KB]  ERES GAIA EDF SUGAR .md
+  [    9.6KB]  ERES GAIA EDF SUGAR Protocol.md
+  [    5.3KB]  SOMT_GAIA_ResearchGate_Abstract.md
+  [   38.4KB]  SOMT_Master_Index_GAIA_Framework.md
+
+====================================================================================================
+COMMERCIAL APPLICATIONS (8 files, 67.6KB)
+====================================================================================================
+  [    5.8KB]  JAS 2025 Resume.md
+  [    9.0KB]  JAS Cummins Resume.md
+  [    8.4KB]  JAS Resume 11_25.md
+  [   10.6KB]  Joseph A. Sprute Resume and Cover Letter for Elon Reeve Musk.md
+  [   10.2KB]  Joseph A. Sprute ~ Walmart RESUME.md
+  [    8.7KB]  Joseph A. Sprute, StandardAero Resume & Cover Letter.md
+  [    4.5KB]  Joseph Allen Sprute Resume.docx.md
+  [   10.3KB]  Revised_Joseph_Sprute_Walmart_Application_Biometric_Checkout.markdown
+
+====================================================================================================
+STAKEHOLDER MATERIALS (8 files, 52.7KB)
+====================================================================================================
+  [   13.8KB]  ERES Emission Resonance Index (ERI) Proposal.md
+  [    3.7KB]  ERES Google 1 page Proposal.md
+  [    3.3KB]  ERES Google Proposal Core Specification.md
+  [    7.5KB]  ERES Google Proposal Pseudo-Code.md
+  [    4.1KB]  ERES Google Proposal.md
+  [    7.9KB]  ERES_Grok Alliance Proposal.md
+  [    1.5KB]  JAS Introductions.md
+  [   10.9KB]  anthropic_proposal.md
+
+====================================================================================================
+RESEARCH PUBLICATIONS (6 files, 158.2KB)
+====================================================================================================
+  [    7.7KB]  ERES MENA 2025 Submission.md
+  [    9.8KB]  ERES ResearchGate Publication Short-List.md
+  [   31.2KB]  ERES_Submission_Record_2025-12-31.md
+  [   43.7KB]  ERES_Submission_Record_2025-12-31_v2.md
+  [   31.9KB]  ISO_IEC Submission_ ERES Talonics RAW System .md
+  [   33.9KB]  SSRN_Legal_Inevitability_Verified_Governance.md
+
+====================================================================================================
+TECHNICAL SPECIFICATIONS (16 files, 508.9KB)
+====================================================================================================
+  [   11.4KB]  Bio-Cybernetics Integration Framework.md
+  [  167.7KB]  ERES Bio-Energetic Property Management Framework.md
+  [    5.9KB]  ERES Collaboration Framework-Infrastructure (Draft).md
+  [   15.2KB]  ERES Collaboration Framework-Infrastructure.md
+  [    4.7KB]  ERES Core Philosophical Framework.md
+  [   20.7KB]  ERES Emission Resonance Index_ A Framework for Self-Optimizing Cognitive Architectures.md
+  [   15.5KB]  ERES Formal Framework for Desire Control.md
+  [    7.8KB]  ERES Migration Plan Framework (Draft).md
+  [   13.4KB]  ERES Migration Plan Framework (Revised).md
+  [   62.9KB]  ERES NAC Implementation Framework v3.md
+  [    9.1KB]  ERES Relative-Realtime Cybernetic Classification Framework.md
+  [   47.0KB]  ERES Resonance Framework for Peace.md
+  [   21.5KB]  ERES Resonance Framework for Peace_ REPORT.md
+  [   23.7KB]  ERES Revised Framework for Desire Control.md
+  [   60.3KB]  ERES_ A Multi-Objective Framework for Runtime System Optimization.md
+  [   22.1KB]  ISO_IEC_ERES_Preliminary_Framework.md
+
+====================================================================================================
+VERTECA (2 files, 212.9KB)
+====================================================================================================
+  [   26.1KB]  ERES VERTECA White Paper Version 2.0.md
+  [  186.8KB]  ERES VERTECA White Paper.md
+
+====================================================================================================
+OTHER (104 files, 19643.6KB)
+====================================================================================================
+  [    7.9KB]  Analysis of Key Philosophical Concepts in ERES New Age Cybernetics.md
+  [    6.8KB]  Aura Resonance Index Visualization.markdown
+  [    9.3KB]  Becoming Open_ Capacity Building and Community Collaboration in the Arab World through Open Science Principles.md
+  [    2.8KB]  Credits, References, and License Information.md
+  [   10.1KB]  ERES 10 Predominate-Interconnected NAC Truths.md
+  [    4.3KB]  ERES 1000-Year Plan in Chinese Review.md
+  [    2.2KB]  ERES AD_ON-AE.md
+  [  473.9KB]  ERES Basics_ Systems Engineering Blueprint.md
+  [   31.1KB]  ERES Biometric Signaling Physiological Synchronization.md
+  [   16.8KB]  ERES Classifying Empirics in Real-Time.md
+  [    7.0KB]  ERES DOFA 6G Immunology.md
+  [  838.9KB]  ERES EMA DAL Covenant.md
+  [    5.0KB]  ERES Final Emergency Transition Report Supplemental.md
+  [    6.1KB]  ERES Final Emergency Transition Report.md
+  [    5.4KB]  ERES GSSG Technical Brief.md
+  [   64.8KB]  ERES Game Theory Future Map.md
+  [    3.2KB]  ERES GitHub NAC Proof of Work.md
+  [   93.2KB]  ERES Grok Human Sustainability Numbers LLM.md
+  [    3.7KB]  ERES Institute GSSG Technical Brief .md
+  [    1.1KB]  ERES Institute _STORM PARTY_.md
+  [   52.2KB]  ERES Institute_ Building Cybernetic Communities That Value Care.md
+  [    5.3KB]  ERES Investment Pitch.md
+  [   28.2KB]  ERES Kinetic Harvesting System Complete.md
+  [   16.9KB]  ERES Kinetic Harvesting System.md
+  [    8.9KB]  ERES Millennium Synthesis.md
+  [    8.1KB]  ERES NAC Governance.md
+  [   12.8KB]  ERES RDSF.md
+  [    9.8KB]  ERES Rating System v1.0.md
+  [  122.0KB]  ERES Rating System v2.0.md
+  [   11.0KB]  ERES Resonance First.md
+  [   71.8KB]  ERES STORM PARTY How.md
+  [   32.1KB]  ERES STORM PARTY What.md
+  [   57.8KB]  ERES STORM PARTY Why.md
+  [   99.6KB]  ERES STORM PARTY With.md
+  [    0.0KB]  ERES STORM PARTY_ What Why How With.md
+  [   18.2KB]  ERES Saving BEES (v1.0).md
+  [   23.8KB]  ERES Saving BEES.md
+  [   84.6KB]  ERES System Integration Architecture v2.0.md
+  [   56.3KB]  ERES System Integration Architecture.md
+  [   20.8KB]  ERES TERMS 08_2025 #43.md
+  [    7.3KB]  ERES Tech Brief.md
+  [    8.0KB]  ERES Three Nations, One Path.md
+  [   43.2KB]  ERES Triadic Grid.md
+  [    2.3KB]  ERES W Matrix w_ SEPLTA + Suggested Revisions.md
+  [   53.0KB]  ERES W Matrix w_ SEPLTA + Suggested Revisions2.md
+  [   58.3KB]  ERES W Matrix w_ SEPLTA + Suggested Revisions3.md
+  [    1.7KB]  ERES W Matrix w_ SEPLTA.md
+  [    0.1KB]  ERES W Matrix.md
+  [   38.4KB]  ERES Why & How NBERS Replaces GDP.md
+  [    3.8KB]  ERES-GROK Solid-State Design.md
+  [   12.9KB]  ERES-SEED_Quick_Reference_Summary.md
+  [    3.7KB]  ERES_CHANGELOG.md
+  [   18.7KB]  ERES_C_Formula_Political_Resolution_Report.md
+  [   10.7KB]  ERES_FORMULAS_COMPLETE.docx.md
+  [   39.7KB]  ERES_NAC_White_Paper_Beyond_Storm_Parties_v1.0.docx.md
+  [    4.2KB]  ERES_Pinnacle_AFP_Report.md
+  [    4.3KB]  ERES_Pinnacle_AFP_Report_with_Images.md
+  [   15.8KB]  ERES_Portfolio_Credits_References_License.md
+  [   10.3KB]  ERES_SEED_00_SERIES_OVERVIEW.md
+  [   46.4KB]  ERES_SEED_01_Foundation.md
+  [   19.5KB]  ERES_SEED_Implementation_Guide.md
+  [   21.7KB]  ERES_SEED_Papers_2-4_Outlines.md
+  [   15.9KB]  ERES_TERMS_44.docx (1).md
+  [   15.9KB]  ERES_TERMS_44.docx.md
+  [    7.3KB]  ERES_TERMS_44_ADDENDUM.docx.md
+  [    8.0KB]  ERES_White_Paper_Critical_Assessment.docx.md
+  [   20.5KB]  ERI_Definitions.md
+  [    1.3KB]  Email_Privacy_Log_2025-08-29.md
+  [    7.4KB]  FINAL_DELIVERY_SUMMARY.md
+  [    9.3KB]  From GDP to NBERS_ The BEST 1000-Year Future Map Draft (Revision 1).md
+  [    9.3KB]  From GDP to NBERS_ The BEST 1000-Year Future Map Draft (Revision 2).markdown
+  [   31.5KB]  From GDP to NBERS_ The BEST 1000-Year Future Map Draft (Revision 3).md
+  [    9.7KB]  From GDP to NBERS_ The BEST 1000-Year Future Map Draft.md
+  [   18.4KB]  Helping Donald 2.md
+  [16202.1KB]  Helping Donald.md
+  [    7.3KB]  JAS CV Draft .md
+  [    6.0KB]  JAS Curriculum Vitae 2025 .md
+  [    0.9KB]  JAS ERES Links 9_25.md
+  [   10.4KB]  Joseph A. Sprute_ Research Profile.md
+  [    9.3KB]  Joseph_A_Sprute_CV.md
+  [   22.4KB]  Joseph_Allen_Sprute_(JAS)_CV.docx.md
+  [    9.7KB]  Municipal_Outreach_Package.md
+  [    3.2KB]  README_Proof-of-Work_MD.md
+  [   15.5KB]  SUBMISSION_GUIDE.md
+  [   15.6KB]  Storm_Party_Political_Strategy.docx.md
+  [   10.2KB]  constitutional_analysis.md
+  [   49.0KB]  constitutional_terms_key.md
+  [    8.2KB]  eres_ai_consciousness.md
+  [   14.2KB]  eres_real_help_report.md
+  [   26.4KB]  eres_smart_city_assembly_article.md
+  [   38.8KB]  eres_talonics_raw_system.md
+  [    5.4KB]  gt_c_me_white_paper.md
+  [    6.8KB]  malfeasance-log.md
+  [    7.1KB]  nac_defines_good_best_real.md
+  [    8.2KB]  nac_global_white_paper.md
+  [    4.0KB]  one_page_executive_summary.md
+  [   67.3KB]  researchgate_talonics_raw_report (1).md
+  [   49.1KB]  researchgate_talonics_raw_report.md
+  [   29.8KB]  revised_document.md
+  [    8.2KB]  strategic_outreach_guide.md
+  [   13.0KB]  talonics_5finger_symbol_index.md
+  [   16.3KB]  talonics_framework_development.md
+  [   32.6KB]  talonics_playnac_emci_integration_roadmap.md
+  [   34.0KB]  talonics_sams_club_business_case.md
