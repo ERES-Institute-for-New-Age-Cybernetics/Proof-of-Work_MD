@@ -1,645 +1,267 @@
-# 📚 ERES Proof-of-Work Documentation (v2.x)
+# ERES Institute for New Age Cybernetics — Support Documentation
 
-> **Canonical Archive of New Age Cybernetics (NAC) Research & Implementation**  
-> *Computer-Readable Documentation for Civilizational Transformation*
-
-[![License: CCAL v2.1](https://img.shields.io/badge/License-CCAL%20v2.1-green.svg)](04_Licenses/CCAL-v2.1.md)
-[![Research Status](https://img.shields.io/badge/Status-Open%20Research-blue.svg)](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
-[![Future Map](https://img.shields.io/badge/Timeline-1000%20Year%20Future-purple.svg)](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
-[![IPFS Archived](https://img.shields.io/badge/IPFS-Archiv ready-orange.svg)](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
-
-**Author:** Joseph A. Sprute  
-**Institution:** ERES Institute for New Age Cybernetics  
-**Mission:** Documenting the architectural foundations for civilization-scale transformation  
-**Repository:** [github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
+**Research & Development Materials for the ERES Corpus**
+**Civilization-Scale Engineering Synthesis: BEST / SOUND / GOOD**
 
 ---
 
-## 🎯 Introduction
-
-The **ERES Institute for New Age Cybernetics (NAC)** maintains this repository as the **living canonical archive** of proofs, architectures, and implementation protocols in machine-readable Markdown format. It serves as both a **public reference** and a **cryptographically anchored record** of research, ensuring transparency, integrity, and longevity across generations.
-
-### Why Markdown?
-
-While the **PlayNAC KERNEL** repository contains comprehensive PDF documentation, **Proof-of-Work_MD** provides the same research in computer-readable Markdown format, enabling:
-
-- **Version Control** - Git-based diff tracking for every change
-- **Automated Processing** - Machine parsing for analysis and validation
-- **Web Rendering** - Direct display on GitHub and documentation sites
-- **Collaborative Editing** - Fork, branch, and merge workflows
-- **Search & Index** - Full-text search across the entire corpus
-- **Cross-Linking** - Hyperlink navigation between documents
-- **API Integration** - Programmatic access to specifications
-- **Long-Term Preservation** - Plain text format ensures accessibility
-
-### The Concept of Proof-of-Work
-
-**Proof-of-Work** here extends beyond computation. It embodies:
-
-- **Documented Effort** - 13+ years of systematic research and development
-- **Resonance-Based Validation** - ARI/ERI oracle verification
-- **Ethical Alignment** - Adherence to NAC core principles
-- **Cryptographic Verification** - SHA-256 hashing and blockchain timestamping
-- **Community Attestation** - Multi-stakeholder validation
-
-Every artifact stored herein (text, code, diagrams, specifications) represents a milestone in the thousand-year map guiding humanity toward sustainable cybernetic integration.
-
-### Version 2.x Enhancements
-
-This **v2.x iteration** introduces key resonance-based indices and frameworks:
-
-- **ARI (Aura Resonance Index)** — Biometric + environmental + behavioral coherence measure
-- **ERI (Emission Resonance Index)** — Emission-aligned resonance quantifier
-- **REACI (Resonance-Aligned Circular Infrastructure)** — Circular systems with resonance at their core
-- **SROC Extension** — Smart Registered Offset Contracts with dynamic ARI/ERI weighting
-- **PlayNAC Integration** — Gamified learning and implementation platform
-- **GERP Vacationomics** — Resource planning integrated with resonance-based leisure economics
-
-Together, these modules form a layered, verifiable system tying ecological responsibility to cybernetic governance.
+> *"Don't hurt yourself. Don't hurt others. Build for generations to come."*
 
 ---
 
-## 🏗️ Architecture Overview
+## About This Repository
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                 NAC ECOSYSTEM (v2.x)                         │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌────────────┐  ┌────────────┐  ┌───────────────┐         │
-│  │   LOGOS    │ ↔│  ECONOMY   │ ↔│  GOVERNANCE   │         │
-│  │  (Cities)  │  │ (UBIMIA,   │  │ (SOMT, ECVS,  │         │
-│  │            │  │ SROC, MC)  │  │  PlayNAC)     │         │
-│  └────────────┘  └────────────┘  └───────────────┘         │
-│         ↓                ↓                 ↓                │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │       PLANETARY COORDINATION LAYER                   │   │
-│  │  (GAIA, GERP, SECUIR, AuraTech, VERTECA, REACI)     │   │
-│  └──────────────────────────────────────────────────────┘   │
-│         ↓                ↓                 ↓                │
-│  ┌─────────────────┐  ┌─────────────────┐                  │
-│  │    PlayNAC      │←→│   EarnedPath    │                  │
-│  │ (Gamification)  │  │  (CPM×WBS+PERT) │                  │
-│  └─────────────────┘  └─────────────────┘                  │
-│         ↓                                                   │
-│  ARI / ERI ↔ SROC / REACI modules                          │
-│  (credit weighting, infrastructure assessment)              │
-└──────────────────────────────────────────────────────────────┘
-```
+This repository contains the primary proof-of-work archive for the **ERES Institute for New Age Cybernetics** (est. February 2012, Bella Vista, Arkansas). It houses white papers, legal instruments, conference submissions, governance frameworks, and supporting materials spanning nearly three decades of independent research in **New Age Cybernetics (NAC)** — a discipline synthesizing engineering, governance, economics, data integrity, energy systems, and adaptive education into a unified architecture for civilization-scale problem solving.
+
+All work is anchored by the foundational equation:
+
+**C = R × P / M** *(Cybernetics = Resource × Purpose ÷ Method)*
+
+The repository is organized around the **ERES Trilogy** — three volumes mapping the BEST/SOUND/GOOD moral vectoring principle onto a developmental arc called **Personal / Public-Private Graceful Evolution**.
 
 ---
 
-## 📚 Repository Structure & Contents
+## The ERES Trilogy
 
-This repository contains **155 commits** of comprehensive Markdown documentation:
+### Book 1: One Good — BEST / Personal Graceful Evolution
 
-### 📁 Current File Organization
+The individual's economic liberation through universal basic infrastructure.
 
-```
-Proof-of-Work_MD/
-│
-├── 📖 Core NAC Frameworks (25+ docs)
-│   ├── ERES 10 Predominate-Interconnected NAC Truths.md
-│   ├── ERES Core Philosophical Framework.md
-│   ├── Analysis of Key Philosophical Concepts in ERES New Age Cybernetics.md
-│   └── ERES Assimilating NAC.pdf → [to be converted]
-│
-├── 🌍 Resonance Metrics (15+ docs)
-│   ├── ERES ARI Application Framework.md
-│   ├── ERES ARI E-Manual V.1.md & V.2.md
-│   ├── ERES ARI Draft.md
-│   ├── ERES ARI Empirics.md
-│   ├── ERES Claude ARI Report.md
-│   ├── ERES Emission Resonance Index (ERI) Proposal.md
-│   ├── ERES Aura Hypothesis.md
-│   ├── ERES Aura Olfactory.md & Aura Olfactory2.md
-│   └── Bio-Cybernetics Integration Framework.md
-│
-├── 💰 Economic Systems (12+ docs)
-│   ├── ERES Meritcoin Cryptocurrency RT Media — Chapter Outline.md
-│   ├── ERES Migration Plan Framework (Draft).md & (Revised).md
-│   ├── ERES Millennium Synthesis.md
-│   └── ERES Game Theory Future Map.md
-│
-├── 🏛️ Governance Protocols (18+ docs)
-│   ├── ERES AOC PAC (v1.0).md & variants
-│   ├── ERES EMA DAL Covenant.md
-│   ├── ERES Covenant for Cooperative Sustainability.pdf → [to be converted]
-│   ├── ERES Formal Framework for Desire Control.md
-│   ├── Credits, References, and License Information.md
-│   └── Continuity Protocol Alpha.pdf → [to be converted]
-│
-├── 🌐 Infrastructure (20+ docs)
-│   ├── ERES LOGOS for Smart-City Community (multiple revisions)
-│   ├── ERES Basics_ Systems Engineering Blueprint.md
-│   ├── ERES GSSG Technical Brief.md
-│   ├── ERES Kinetic Harvesting System Complete.md
-│   ├── ERES HELP USE Energy Law.md
-│   └── Articles 251-253 series (Talonics, VERTECA, GSSG)
-│
-├── 🔬 Technical Specifications (15+ docs)
-│   ├── ERES Collaboration Framework-Infrastructure (Draft).md
-│   ├── ERES System Integration Architecture v2.0.md
-│   ├── ERES Law Enforcement_ BEST Biometric Checkout V1.0.md & V1.1.md
-│   ├── ERES DOFA 6G Immunology.md
-│   ├── ERES Classifying Empirics in Real-Time.md
-│   └── Architectural_Proposal_for_Boundaryless.md
-│
-├── 🌏 International Initiatives (12+ docs)
-│   ├── ERES Google Proposal series (4 documents)
-│   ├── ERES MENA 2025 Submission.md & drafts
-│   ├── ERES 1000-Year Plan in Chinese Review.pdf → [to be converted]
-│   ├── Becoming Open_ Capacity Building (Arab World).md
-│   └── Atom Global White Paper.pdf → [to be converted]
-│
-├── 🎮 PlayNAC Implementation (10+ docs)
-│   ├── ERES PlayNAC ARI _KERNEL_ (Version 8.0).md
-│   ├── ERES PlayNAC Codebase series (multiple versions)
-│   ├── ERES PlayNAC Cryptography.md
-│   ├── ERES PlayNAC Work Specificity.md
-│   └── ERES PlayNAC Smart City Framework with EP GERP Vacationomics.md
-│
-├── 📊 Assessment & Rating (8+ docs)
-│   ├── ERES Rating System v1.0.md & v2.0.md
-│   ├── ERES BORDERS_ Analysis.md & v1.2.pdf
-│   ├── ERES Existence Resonance.md & (Draft).md
-│   ├── ERES Resonance First.md
-│   └── ERES Resonance Framework for Peace.md & REPORT.md
-│
-├── 🗺️ Future Mapping (5+ docs)
-│   ├── 1000-Year Future Map with Cybernetics and xAI.markdown
-│   ├── 1000-Year Future Map with Global Unity and xAI.markdown
-│   ├── ERES Comprehensive White Paper for JAS Leadership.markdown
-│   └── ERES Final Emergency Transition Report.md & Supplemental.md
-│
-└── 🌪️ Strategic Initiatives (8+ docs)
-    ├── ERES Institute _STORM PARTY_.md
-    ├── ERES STORM PARTY_ What Why How With.md
-    ├── ERES Saving BEES.md & (v1.0).md
-    ├── ERES Relative-Realtime Cybernetic Classification Framework.md
-    └── ERES NAC Implementation Framework v3.md
-```
+### Book 2: Security-Clearance — SOUND / Public-Private Graceful Evolution
 
-### 📋 Recommended Document Organization (Future)
+The institutional trust architecture connecting personal identity to governance infrastructure.
 
-For optimal navigation, we recommend reorganizing into:
+### Book 3: Data-Integrity — GOOD / Graceful Evolution Verified
 
-```
-Proof-of-Work_MD/
-├── 01_Manifestos/
-│   ├── Generations_to_Come_Declaration.md
-│   ├── NAC_Ethics_Framework.md
-│   └── Civilization_Transformation_Principles.md
-│
-├── 02_Definitions/
-│   ├── Core_Glossary.md
-│   ├── ARI_Definition.md
-│   ├── ERI_Definition.md
-│   ├── REACI_Definition.md
-│   └── GERP_Vacationomics.md
-│
-├── 03_Architecture/
-│   ├── LOGOS_Framework.md
-│   ├── Economic_Module.md
-│   ├── SROC_Extensions.md
-│   ├── Governance_Module.md
-│   └── EarnedPath_Implementation.md
-│
-├── 04_Implementation/
-│   ├── Sensor_Designs/
-│   ├── Oracle_Framework.md
-│   ├── Smart_Contracts/
-│   └── Data_Ingestion_Pipelines.md
-│
-├── 05_Roadmaps/
-│   ├── Implementation_Roadmap.md
-│   ├── Scaling_Strategy.md
-│   └── Migration_Plan.md
-│
-├── 06_Use_Cases/
-│   ├── Pilot_Community_Case.md
-│   ├── City_Scale_Case.md
-│   └── Global_Coordinated_Case.md
-│
-└── 07_Licenses/
-    └── CCAL-v2.1.md
-```
+The technical substrate that makes BEST and SOUND falsifiable: fault-tolerant data architecture, resonance metrics, and propulsion physics.
+
+**Complete Trilogy archive:**
+
+| File | Contents |
+|------|----------|
+| `ERES_Anthropic-3_BOOKS.zip` | Trilogy source documents |
+| `ERES_Anthropic-3_BOOKS PDF plus MD.zip` | Trilogy in PDF and Markdown formats |
 
 ---
 
-## 🎯 Key Frameworks & Components
+## Repository Contents by Domain
 
-### 1. Resonance Framework
+### Foundational & Cross-Cutting
 
-**ARI (Aura Resonance Index)**
-- Multidimensional coherence metric
-- Combines biometric, environmental, and behavioral signals
-- Real-time measurement via sensor networks
-- Oracle validation for standardized scoring
+| File | Domain | Description |
+|------|--------|-------------|
+| `ERES_Hague_Submission_2026.docx.pdf` | Legal / International | Formal submission to the International Court of Justice (ERES-HAGUE-2026-001) |
+| `ERES_Hague_Submission_2026.docx.md` | Legal / International | Hague submission — Markdown version |
+| `ERES_Hague_Submission.zip` | Legal / International | Hague submission package (original) |
+| `ERES_Hague_Submission (1).zip` | Legal / International | Hague submission package (updated) |
+| `ERES_Government-Partnership 7 International Languages (PDF).zip` | Governance / Diplomacy | Government Partnership Brief — 7 language translations (PDF) |
+| `ERES_Government-Partnership 7 International Languages (MD).zip` | Governance / Diplomacy | Government Partnership Brief — 7 language translations (Markdown) |
+| `ERES_SPT.zip` | Architecture / Scale Proof | SPT Papers: Doc A (Complete Architecture) + Doc B (SPT×VLSA Novel Contributions) + VLSA test script (91/91) |
+| `ERES_Transmission.zip` | Core Framework | ERES Transmission documents |
+| `ERES GitHub Backup 3-15-26.zip` | Archive | Full GitHub organization backup (March 15, 2026) |
 
-**ERI (Emission Resonance Index)**
-- Emission-aligned resonance quantifier
-- Ecological impact assessment tool
-- SROC weighting mechanism
-- Planetary health indicator
+### Book 1 Domain — BEST / Economics & Personal Infrastructure
 
-**Resonance Validation**
-- Oracle networks for verification
-- Sensor data aggregation
-- Multi-stakeholder attestation
-- Cryptographic proof chains
+| File | Domain | Description |
+|------|--------|-------------|
+| `Academia.edu_Bundle_-_ERES_PATRIOT_DIVIDEND_v4_0_WHITE_PAPER.zip` | Economics | Patriot Dividend v4.0 white paper (Academia.edu bundle) |
+| `ERES Patriot Dividend BUILD.zip` | Economics | Patriot Dividend build materials |
+| `ERES_CHINA-Prelude.zip` | Economics / International | China Adaptation Framework prelude |
 
-### 2. Economic Transformation
+### Book 2 Domain — SOUND / Governance & Institutional Trust
 
-**UBIMIA (Universal Basic Income + Merit + Incentives + Awards)**
-- Hybrid economic model
-- Merit-based income distribution
-- Contribution recognition system
-- Resource allocation framework
+| File | Domain | Description |
+|------|--------|-------------|
+| `ERES GSSG (PDF).zip` | Governance | GSSG v3.0 — Global Sustainable Systems Governance (PDF) |
+| `ERES GSSG (MD).zip` | Governance | GSSG v3.0 — Markdown version |
+| `ERES NPR (PDF).zip` | Governance / Policy | NPR v3.0 FINAL — National Priorities Realignment with HowWay Declaration (PDF) |
+| `ERES NPR (MD).zip` | Governance / Policy | NPR v3.0 — Markdown version |
+| `ERES_Resolution-Protocol_SCALULAR.zip` | Legal Engineering | SCALULAR Engine — 10-part, 323-paragraph perpetual legal instrument |
+| `ERES_LongLat-SROC.zip` | Contract Engineering | SROC — Smart-Resonant Offset Contracts with game-theoretic equilibrium analysis |
 
-**SROC with Resonance Weighting**
-- Smart Registered Offset Contracts
-- Environmental credits modulated by ARI/ERI
-- Dynamic ecological impact pricing
-- Oracle-verified transactions
+### Book 3 Domain — GOOD / Data Integrity & Technical Validation
 
-**Meritcoin & GraceChain**
-- Tokenized contribution tracking
-- Transparent transaction ledgers
-- Community governance
-- Cross-platform interoperability
+| File | Domain | Description |
+|------|--------|-------------|
+| `FAVORS BERA Complete (10 MD Files).zip` | Data Integrity / Resonance | FAVORS-BERA complete package — Markdown (10 files) |
+| `FAVORS BERA Complete (8 PDF Files).zip` | Data Integrity / Resonance | FAVORS-BERA complete package — PDF (8 files) |
+| `ERES FAVORS BERA DBDM 2026 Workup DETAIL (PDF).zip` | Conference Submission | FAVORS-BERA DBDM 2026 (Sydney) workup detail — PDF |
+| `ERES FAVORS BERA DBDM 2026 Workup DETAIL (MD).zip` | Conference Submission | FAVORS-BERA DBDM 2026 workup detail — Markdown |
+| `ERES GAIA ECVS SOMT (PDF).zip` | Infrastructure Architecture | GAIA-ECVS-SOMT — Global Adaptive Infrastructure Architecture (PDF) |
+| `ERES GAIA ECVS SOMT (MD).zip` | Infrastructure Architecture | GAIA-ECVS-SOMT — Markdown version |
+| `GAIA ERES SOMT GEAR.zip` | Infrastructure Architecture | GAIA SOMT GEAR v2.0 |
+| `ESVRD_Package.zip` | Propulsion Engineering | ESVRD — Electrostatic Vibration Resonance Drive (original package) |
+| `ESVRD_Package-v1-4.zip` | Propulsion Engineering | ESVRD v4.0 — anchored to Hyland 2025 epitaxial semiconductor data |
+| `ERES EPIR-Q PlayNAC (PDF).zip` | Engagement Architecture | EPIR-Q PlayNAC — gamified engagement layer (PDF) |
+| `ERES EPIR-Q PlayNAC (MD).zip` | Engagement Architecture | EPIR-Q PlayNAC — Markdown version |
+| `ERES Claude DeepSeek Grok Workforce LLM (PDF).zip` | Epistemology / MIEVM | Multi-Instrument Ensemble Validation Method — LLM workforce deployment (PDF) |
+| `ERES Claude DeepSeek Grok Workforce LLM (MD).zip` | Epistemology / MIEVM | MIEVM LLM workforce — Markdown version |
 
-### 3. Governance Systems
+### Reference Materials
 
-**SOMT & ECVS**
-- Ethical decision-making frameworks
-- Civic participation protocols
-- Conflict resolution mechanisms
-- Democratic coordination tools
-
-**LOGOS Integration**
-- Locational (geographic context)
-- Organizational (institutional structures)
-- Governance (decision frameworks)
-- Operational (implementation protocols)
-- Societal (community dynamics)
-
-**Planetary Coordination**
-- GAIA (Global Aura Integration Architecture)
-- GERP (Global Earth Resource Planner)
-- SECUIR (Sustainable Energy & Climate Universal Infrastructure Registry)
-- Resource management protocols
-
-### 4. Implementation Platforms
-
-**PlayNAC Kernel**
-- Gamified learning engine
-- Quest-based implementation
-- Community engagement tools
-- Achievement systems
-
-**EarnedPath System**
-- EP = CPM × WBS + PERT
-- Critical Path Method skill sequencing
-- Work Breakdown Structure task mapping
-- Risk-adjusted timeline planning
-
-**REACI Infrastructure**
-- Resonance-Aligned Circular Infrastructure
-- Energy system design
-- Waste management protocols
-- Housing and mobility solutions
+| File | Domain | Description |
+|------|--------|-------------|
+| `Blockchain_assisted_signature_and_certificate_base.pdf` | Reference | Third-party blockchain signature/certificate research reference |
 
 ---
 
-## 🚀 Getting Started
+## Canonical Equations
 
-### Prerequisites
+The ERES framework is anchored by three canonical equations (Triune Math):
 
-```bash
-# Required
-Git 2.x+
-Markdown editor (VS Code, Obsidian, Typora)
-Text editor with Markdown preview
+1. **C = R × P / M** — Cybernetics = Resource × Purpose ÷ Method
+2. **M × E + C = R** — Matter × Energy + Constant = Reason
+3. **REAL = (E · M · R) / (T · S)** — Energy · Matter · Resonance over Time · Space *(no repeated letters)*
 
-# Optional
-Node.js (for automated processing)
-Python 3.8+ (for data analysis)
-IPFS node (for distributed storage)
-Installation & Access
-bash
+---
 
-Clone the repository
+## Key Terminology
 
-git clone https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD.git
-cd Proof-of-Work_MD
+| Term | Expansion |
+|------|-----------|
+| **NAC** | New Age Cybernetics |
+| **ERES** | ERES Institute for New Age Cybernetics |
+| **ESVRD / VRD** | Electrostatic Vibration Resonance Drive |
+| **FAVORS** | Fault-tolerant Adaptive Validation and Operational Resilience System |
+| **BERA** | Bioenergetic Resonance Architecture |
+| **CBGMODD** | Stateful Taxonomy (see Book 3) |
+| **GAIA** | Global Adaptive Infrastructure Architecture |
+| **SOMT** | Sociocratic Overlay Metadata Tapestry |
+| **GSSG** | Global Sustainable Systems Governance |
+| **UBIMIA** | Universal Basic Infrastructure — Meritcoin Incentivized Architecture |
+| **IDIPITIS** | Identity architecture (see Book 2) |
+| **NBERS** | Economic security framework (see Book 2) |
+| **SCALULAR** | Scalable Certification Architecture for Lifelong Universal Learning and Adaptive Resilience |
+| **SROC** | Smart-Resonant Offset Contracts |
+| **MIEVM** | Multi-Instrument Ensemble Validation Method |
+| **NPR** | National Priorities Realignment |
+| **PlayNAC** | Gamified engagement layer / KERNEL codebase |
+| **EPIR-Q** | Engagement protocol (see PlayNAC) |
+| **Meritcoin** | Proof-of-Resonance economic instrument |
+| **GraceChain** | Distributed trust ledger |
+| **EarnedPath** | Adaptive credentialing (EP = CPM × WBS + PERT) |
+| **CCAL v2.1** | CARE Commons Attribution License |
+| **VLSA** | Validated Livable Scale Architecture |
+| **FDRV** | Future Design Reference Vehicle (interstellar vessel at maximum scale) |
+| **RHC** | Resonant Harmony Cycle *(not Cybernetics)* |
+| **RCI** | Resonant Continuity Index (RCI = P_Ω_norm × ARI_sys × VibConst) |
+| **SPT** | (March 2026) Complete Architecture + VLSA Scale Proof papers |
 
-Browse documentation
+**BERA Resonance Indices:** ARI (Aura Resonance Index), ERI (Emission Resonance Index), RHC (Resonant Harmony Cycle), RCI (Resonant Continuity Index)
 
-ls -la *.md | sort
+**SCALULAR Certification Pillars:** HEALTH (SSHP), LAW (SSLA), PROTECTION (SSPS), SKILLS/TRADE (SSST), with SSSC as Tier 1 baseline
 
-Search across documents
+---
 
-grep -r "ARI" *.md
-grep -r "SROC" *.md
+## Known Documentation Gaps
 
-View in browser
+The following artifacts are known to exist in the ERES corpus but are **not yet uploaded** to this repository. Items marked with `(*)` may be embedded within the Trilogy or other archive files but lack standalone representation:
 
-Use GitHub's web interface for rendered Markdown
-Or open individual .md files in your preferred editor
-Recommended Reading Path
-Phase 1: Foundation
-bash
+### Critical — Standalone Documents Needed
 
-Start with core principles
+- [ ] **ERES Complete Description-Corpus** — 491 paragraphs, 12 parts, cross-document consistency framework
+- [ ] **CCAL v2.1** — CARE Commons Attribution License full text (needed as `LICENSE` file)
+- [ ] **IDIPITIS** — Identity architecture standalone white paper
+- [ ] **NBERS** — Economic security framework standalone white paper
+- [ ] **UBIMIA** — Universal Basic Infrastructure economics standalone document
+- [ ] **CBGMODD Stateful Taxonomy** — Standalone specification
+- [ ] **401(k) Soft Landing v2.0** — Including China Adaptation Framework and MIEVM Validation Record
+- [ ] **ILO (International Land Ownership)** — ERES-HOW-ILO-2026-001, Personal/Public-Private stewardship classes
+- [ ] **RCI Specification v1.0** — Resonant Continuity Index (co-developed with Jimmy D. Butzbach)
+- [ ] **Meritcoin / GraceChain** — Proof-of-Resonance economics standalone specification
 
-cat "ERES 10 Predominate-Interconnected NAC Truths.md"
-cat "ERES Core Philosophical Framework.md"
-cat "Analysis of Key Philosophical Concepts in ERES New Age Cybernetics.md"
-Phase 2: Resonance Metrics
-bash
+### Code Artifacts
 
-Learn ARI/ERI systems
+- [ ] **BERA-PY** — Python library for BERA resonance metrics
+- [ ] **PlayNAC KERNEL** — Core codebase (deployable code, not just documentation)
+- [ ] **VLSA test script** — Standalone 91/91 test coverage script (may be inside `ERES_SPT.zip`)
 
-cat "ERES ARI E-Manual V.2.md"
-cat "ERES Emission Resonance Index (ERI) Proposal.md"
-cat "Bio-Cybernetics Integration Framework.md"
-Phase 3: Implementation
-bash
+### Partial — May Be Embedded in Existing Archives
 
-Study practical frameworks
+- [ ] **Storm Party** — Political architecture `(*)`
+- [ ] **EarnedPath** — Adaptive credentialing specification `(*)`
+- [ ] **FDRV / Talonics** — Interstellar vessel design / propulsion subsystems `(*)`
+- [ ] **PBJ Tri-Codex** — PERC/BERC/JERC `(*)`
+- [ ] **MIEVM Formal Specification** — May be in Workforce LLM package `(*)`
+- [ ] **FAMITY / VECTOR / COI** — Governance subsystems `(*)`
+- [ ] **VERTECA / SECUIR / LOGOS / THOW / HFVN** — Infrastructure subsystems `(*)`
 
-cat "ERES LOGOS for Smart-City Community (rev.2).md" # Note: if converted
-cat "ERES Basics_ Systems Engineering Blueprint.md"
-cat "ERES System Integration Architecture v2.0.md"
-💻 Working with Markdown Documentation
-Document Standards
-All documents use CommonMark/GitHub Flavored Markdown
-YAML frontmatter for metadata (where applicable)
-Consistent heading hierarchy
-Cross-document linking via relative paths
-Code blocks with language specification
-Cross-Referencing
-markdown
+### Repository Housekeeping
 
-Internal Links
+- [ ] Add `LICENSE` file with CCAL v2.1 text (current README incorrectly references MIT License)
+- [ ] Resolve duplicate Hague files (two zip versions + standalone md + pdf)
+- [ ] Add `CONTRIBUTING.md` if community contributions are desired
+- [ ] Consider organizing files into subdirectories by Trilogy book alignment
 
-[See the ARI Framework](./ERES%20ARI%20Application%20Framework.md)
-[SROC Specification](./ERES%20GSSG%20Technical%20Brief.md)
+---
 
-Section Links
+## Three Eras of Development
 
-[Jump to Resonance Metrics](#resonance-metrics)
-[See Implementation Guide](#implementation)
-Automated Processing
-javascript
-// Example: Parse all documents for ARI references
-const fs = require('fs');
-const path = require('path');
+| Era | Period | Key Activity |
+|-----|--------|--------------|
+| **CyberRAVE** | Pre-1997–2007 | Foundational work with Emanuel M. Alexiou (EMA) and Anthony Ferguson/CFAL. 72 Key Domains derived from constraint-based culling of the Register of Collective Indices. |
+| **SaleBuilders** | 1997–2012 | Applied development and commercial systems architecture. |
+| **ERES Institute** | 2012–Present | Formal independent research institute. 300+ publications on ResearchGate. Active GitHub repositories. International submissions (Hague, DBDM 2026, ISO/ANSI). |
 
-function findARIReferences() {
-const files = fs.readdirSync('./').filter(f => f.endsWith('.md'));
-const references = [];
+---
 
-files.forEach(file => {
-const content = fs.readFileSync(file, 'utf-8');
-const matches = content.match(/ARI[^a-z]/gi);
-if (matches) {
-references.push({ file, count: matches.length });
-}
-});
+## Validation Method
 
-return references.sort((a, b) => b.count - a.count);
-}
+The ERES corpus employs the **Multi-Instrument Ensemble Validation Method (MIEVM)** — a structured epistemological protocol deploying four AI systems (Claude, Grok, DeepSeek, ChatGPT) as parallel validation nodes. MIEVM was culled from a larger original ensemble due to the author's bandwidth constraints as a solo researcher — the same constraint-based culling epistemology that produced CyberRAVE's 72 Key Domains.
 
-console.log(findARIReferences());
-📊 Document Statistics & Metrics
-Repository Metrics
-Total Markdown Files: 155+
-Total File Size: ~50MB (text)
-Average Document Length: ~5,000 words
-Cross-References: 500+ internal links
-External Citations: 200+ sources
-Most Referenced Documents
-ERES ARI E-Manual V.2.md
-ERES Core Philosophical Framework.md
-ERES System Integration Architecture v2.0.md
-ERES PlayNAC ARI _KERNEL_ (Version 8.0).md
-Document Categories by Count
-plaintext
-Core NAC Frameworks: 25 documents
-Resonance Metrics: 15 documents
-Economic Systems: 12 documents
-Governance Protocols: 18 documents
-Infrastructure: 20 documents
-Technical Specifications: 15 documents
-International Initiatives: 12 documents
-PlayNAC Implementation: 10 documents
-Assessment & Rating: 8 documents
-Future Mapping: 5 documents
-Strategic Initiatives: 8 documents
-Reference Materials: 7 documents
-Update Frequency
-Daily: Active development documents
-Weekly: Technical specifications
-Monthly: Strategic frameworks
-Quarterly: Comprehensive reviews
-🔍 Key Document Highlights
-Most Comprehensive
-ERES ARI E-Manual V.2.md - Complete ARI implementation guide
-ERES System Integration Architecture v2.0.md - Full technical architecture
-ERES PlayNAC ARI _KERNEL_ (Version 8.0).md - Gamification specifications
-Most Referenced
-ERES Core Philosophical Framework.md - Referenced in 40+ documents
-ERES ARI Application Framework.md - Referenced in 30+ documents
-ERES Basics_ Systems Engineering Blueprint.md - Referenced in 25+ documents
-Most Recent Updates
-ERES NAC Implementation Framework v3.md
-ERES MENA 2025 Submission Draft2.md
-ERES PlayNAC Smart City Framework with EP GERP Vacationomics.md
-🔗 Integration Ecosystem
-NAC Component Integration
-yaml
+**MIEVM operates as Instrument-of-Faith:** faith extended first, then validated by method.
 
-Integration mapping
+---
 
-nac_ecosystem:
-theoretical_foundation:
-repository: "Proof-of-Work_MD"
-format: "Markdown documentation"
-purpose: "Computer-readable specifications"
+## Proof-of-Resonance
 
-research_archive:
-repository: "PlayNAC-KERNEL"
-format: "PDF documents"
-purpose: "Comprehensive research archive"
+Meritcoin operates on **Proof-of-Resonance** (not Proof-of-Work): the four BERA Resonance Metrics (ARI, ERI, RHC, RCI) feed directly into Meritcoin value accrual as a closed feedback loop — ethical and ecological harmony IN, economic value OUT.
 
-economic_system:
-repository: "Gracechain-Meritcoin"
-format: "Smart contracts & code"
-purpose: "Merit-based blockchain economics"
+> *"It's not mining — it's tuning."*
 
-implementation:
-platform: "PlayNAC"
-integration: "Quest system & gamification"
-data_sources: "ARI/ERI sensor networks"
-External Integrations
-GitHub Actions - Automated validation and CI/CD
-IPFS - Distributed storage for archival
-OpenTimestamps - Blockchain timestamping
-Oracle Networks - ARI/ERI verification
-Sensor Networks - Real-time data collection
-🛠️ Development & Contribution
-Contributing Documentation
-markdown
+---
 
-Fork & Clone
+## Related Repositories
 
-git clone https://github.com/YOUR_USERNAME/Proof-of-Work_MD.git
-cd Proof-of-Work_MD
+- [ERES-Institute-for-New-Age-Cybernetics](https://github.com/ERES-Institute-for-New-Age-Cybernetics) — GitHub organization home
 
-Create Feature Branch
+---
 
-git checkout -b feature/new-framework-doc
+## External Proof-of-Work Platforms
 
-Add/Edit Documents
+- **ResearchGate:** Joseph Allen Sprute — 300+ publications
+- **SSRN:** Keyword sets for ILO, SROC, SCALULAR Engine, SCALULAR Public Record
+- **DBDM 2026 (Sydney):** FAVORS-BERA conference submission
+- **The Hague:** ERES-HAGUE-2026-001 formal submission
+- **ISO/ANSI:** Standards body submissions
 
-Use consistent Markdown formatting
-Include YAML frontmatter where applicable
-Add cross-references to related documents
-Follow naming conventions
+---
 
-Commit with Descriptive Messages
+## Author
 
-git add .
-git commit -m "Add comprehensive REACI infrastructure framework"
+**Joseph Allen Sprute** (ERES Maestro)
+Founder and Director, ERES Institute for New Age Cybernetics
+U.S. Army Veteran — Oregon Army National Guard, 1983–1989, Infantry 11B, Honorable Discharge
+33 Westbury Drive, Bella Vista (Beautiful View), Arkansas 72714
 
-Push & Create Pull Request
+**Co-Author:** SYU JIA WUN (independent researcher, Taiwan) — first cross-Pacific co-author
 
-git push origin feature/new-framework-doc
-Documentation Standards
-Use descriptive filenames (kebab-case or snake_case)
-Include document metadata (author, date, version)
-Maintain consistent heading hierarchy (H1 → H6)
-Use code blocks with language specification
-Include cross-references to related documents
-Provide examples and use cases where applicable
-Quality Guidelines
-Technical Accuracy - Verify all specifications
-Clarity - Write for diverse audiences
-Completeness - Cover all aspects of the topic
-Consistency - Follow established patterns
-Attribution - Credit sources and collaborators
-🔐 Verification & Integrity
-Cryptographic Verification
-bash
+**Contact:** eresmaestro@gmail.com
 
-Generate document hash
+---
 
-shasum -a 256 "ERES ARI E-Manual V.2.md"
+## License
 
-Timestamp document (OpenTimestamps)
+This repository and all original ERES materials are published under the **CARE Commons Attribution License v2.1 (CCAL)**. This license requires attribution and prohibits weaponization but permits free redistribution.
 
-ots stamp "ERES ARI E-Manual V.2.md"
+> *"Build for generations to come."*
 
-Verify timestamp
+ERES Institute is explicitly **not constituted as a business**. All work is delivered "relatively free" via UBIMIA economics.
 
-ots verify "ERES ARI E-Manual V.2.md.ots"
+**Third-party reference materials** (e.g., `Blockchain_assisted_signature_and_certificate_base.pdf`) retain their original licensing.
 
-IPFS archival
+---
 
-ipfs add -r Proof-of-Work_MD/
-Git Version Control
-Every change tracked via Git commits
-Full audit trail of modifications
-Contributor attribution in commit history
-Branch-based development workflow
-Peer review through pull requests
-Oracle Attestation
-Multi-stakeholder validation for critical specifications
-Sensor network verification for resonance metrics
-Community consensus mechanisms
-Transparent validation processes
-📈 Roadmap & Future Development
-Phase 1: Foundation (Complete)
-✅ Core documentation compilation in Markdown
-✅ Git-based version control
-✅ Basic cross-referencing
-✅ Initial organization structure
-Phase 2: Enhancement (Current - 2025)
-🔄 Complete PDF→Markdown conversion
-🔄 Automated cross-reference validation
-🔄 Enhanced metadata and tagging
-🔄 Search and navigation improvements
-🔄 Integration with PlayNAC platform
-Phase 3: Automation (2026)
-📋 CI/CD pipeline for validation
-📋 Automated diagram generation
-📋 API for programmatic access
-📋 Real-time collaborative editing
-📋 AI-assisted documentation assistance
-Phase 4: Scale (2027+)
-📋 Multi-language translations
-📋 Interactive documentation platform
-📋 Community contribution workflows
-📋 Blockchain-anchored versions
-📋 Distributed storage on IPFS
-🌍 Community & Support
-Get Help & Contribute
-Documentation: GitHub README and wikis
-Discussions: GitHub Discussions
-Issues: Bug reports and feature requests
-Contact: eresmaestro@gmail.com
-Stay Updated
-GitHub Watch - Repository notifications
-GitHub Releases - Version announcements
-Social Media - ERES Institute channels
-Newsletter - Monthly research updates
-⚖️ License & Legal
-CARE Commons Attribution License v2.1 (CCAL)
-This work is licensed under CCAL v2.1:
-✅ Share — Copy and redistribute in any medium
-✅ Adapt — Remix, transform, and build upon
-Under these terms:
-📌 Attribution — Credit "Joseph A. Sprute — ERES Institute for New Age Cybernetics"
-🚫 Non-Exploitative — No extractive commercial use
-🔍 Transparency — Indicate changes made
-See 07_Licenses/CCAL-v2.1.md for complete terms.
-Citing This Repository
-When referencing documents:
-plaintext
-Sprute, J. A. (2012-2025). [Document Title]. 
-ERES Institute for New Age Cybernetics Proof-of-Work Documentation.
-Retrieved from https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD
-BibTeX:
-bibtex
-@misc{sprute2025pow,
-author = {Sprute, Joseph A.},
-title = {ERES Proof-of-Work Documentation},
-year = {2025},
-publisher = {GitHub},
-journal = {GitHub repository},
-howpublished = {\url{https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD}}
-}
-🙏 Acknowledgments
-Research Development:
-13+ years of systematic documentation
-Multiple AI research collaborations
-Academic peer review and validation
-Community feedback and testing
-Technical Infrastructure:
-GitHub for version control and hosting
-Markdown for universal accessibility
-Git for distributed collaboration
-IPFS for decentralized archival
-Community Contributions:
-Early adopters and pilot communities
-Translation and localization teams
-Technical reviewers and validators
-Partnership organizations
-
-"Documenting the architectural foundations for civilization-scale transformation - one commit at a time."
-
-[![ERES Institute](https://img.shields.io/badge/ERES-Institute_for_New_Age_Cybernetics-green.svg)](https://github.com/ERES-Institute-for-New-Age-Cybernetics)
-[![Documentation](https://img.shields.io/badge/Docs-Markdown%20Archive-blue.svg)](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD)
-[![Commits](https://img.shields.io/github/commit-activity/m/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD?label=Commits)](https://github.com/ERES-Institute-for-New-Age-Cybernetics/Proof-of-Work_MD/commits)
+**Document ID:** ERES-SUPPORT-README-2026-001
+**Last Updated:** March 28, 2026
+**Classification:** Open / Unrestricted
