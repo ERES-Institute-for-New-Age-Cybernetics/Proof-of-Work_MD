@@ -1,0 +1,123 @@
+{
+  "test_vector_a": {
+    "name": "Minimal Citizen Transaction (ACCEPT path)",
+    "fixed_parameters": {
+      "test_key_seed_derivation": "SHA256('ERES-CRYPTO-STD-2026-001-v1.1-TEST-KEY-C')",
+      "test_key_seed_hex": "f2f794def2ea5d19ecb0f894716932654eb173195c451b2cccb9770ab2874691",
+      "test_public_key_hex": "04e552e2c8ee4d34be854a1ca808600183f0afcfa8a4d063eb7c1e1bb7fecf68",
+      "nonce_hex": "00112233445566778899aabbccddeeff",
+      "nonce_b64": "ABEiM0RVZneImaq7zN3u/w==",
+      "timestamp": "2026-04-22T14:32:17.042Z"
+    },
+    "payload": {
+      "ctx": {
+        "txn_id": "txn-000001",
+        "policy_id": "uri:eres:policy:2026:test:v1",
+        "primitives_referenced": [
+          "GCF"
+        ],
+        "nonce": "ABEiM0RVZneImaq7zN3u/w=="
+      },
+      "cbgmodd": [
+        {
+          "role": "C",
+          "weight": 1.0,
+          "credibility": 0.8,
+          "signature": "ed25519:Xyzl53Zs4EqayDQtU0AbaXUSopeVBRDu/dAN9TrulCKmdMulOKYPNjWh/WK9ZH1fftKMQf+IGBUZBUi7WZ3oBg==",
+          "attested_at": "2026-04-22T14:30:00Z"
+        }
+      ],
+      "favors": {
+        "f": 0.92,
+        "a": 0.88,
+        "v": 0.95,
+        "o": null,
+        "r": 0.9,
+        "s": 0.87
+      },
+      "bera": {
+        "ari": 0.84,
+        "eri": 0.79,
+        "rhc": 0.91,
+        "rci": 0.82,
+        "sensor_spec": "RG#404-v1.0",
+        "window_seconds": 30
+      }
+    },
+    "canonical_payload_utf8_bytes": "{\"bera\":{\"ari\":0.84,\"eri\":0.79,\"rci\":0.82,\"rhc\":0.91,\"sensor_spec\":\"RG#404-v1.0\",\"window_seconds\":30},\"cbgmodd\":[{\"attested_at\":\"2026-04-22T14:30:00Z\",\"credibility\":0.8,\"role\":\"C\",\"signature\":\"ed25519:Xyzl53Zs4EqayDQtU0AbaXUSopeVBRDu/dAN9TrulCKmdMulOKYPNjWh/WK9ZH1fftKMQf+IGBUZBUi7WZ3oBg==\",\"weight\":1.0}],\"ctx\":{\"nonce\":\"ABEiM0RVZneImaq7zN3u/w==\",\"policy_id\":\"uri:eres:policy:2026:test:v1\",\"primitives_referenced\":[\"GCF\"],\"txn_id\":\"txn-000001\"},\"favors\":{\"a\":0.88,\"f\":0.92,\"o\":null,\"r\":0.9,\"s\":0.87,\"v\":0.95}}",
+    "canonical_payload_length": 510,
+    "payload_sha256_hex": "2f751f1bf59d5a2b7b5682e280bcc523bd0ea7384433a9814d8deebc821d7acd",
+    "payload_sha256_b64": "L3UfG/WdWit7VoLigLzFI70OpzhEM6mBTY3uvIIdes0=",
+    "bera_canonical_bytes": "{\"ari\":0.84,\"eri\":0.79,\"rci\":0.82,\"rhc\":0.91,\"sensor_spec\":\"RG#404-v1.0\",\"window_seconds\":30}",
+    "sigma_hex": "e43732833d50a0502dab120d33fa05537bb4a069957f3aba293ebe62aba50ad7",
+    "sigma_selection_index_for_gcf": 2,
+    "gcf_resolved_reading": "G3",
+    "intermediate_scalars": {
+      "g": 1,
+      "b": 0.904,
+      "e": 0.84,
+      "semantic_clarity": 0.8,
+      "policy_alignment": 0.962308,
+      "bera_stdev": 0.044159,
+      "bera_max_pairwise": 0.12,
+      "conflict": 0,
+      "composite_confidence": 0.869293
+    },
+    "rate_vector_normative": [
+      10,
+      10,
+      10,
+      9,
+      8,
+      9,
+      10
+    ],
+    "rate_score_normative": 9.428571,
+    "rate_object": {
+      "vector": [
+        10,
+        10,
+        10,
+        9,
+        8,
+        9,
+        10
+      ],
+      "score": 9.428571,
+      "provenance": {
+        "cbgmodd_hash": "sha256:gFVn6fIKVaqQJKYEC5JlzRDFXdTc0o2YKxc5r+yHkZo=",
+        "favors_hash": "sha256:CRoIuJS8MJ2zVEHxIZArHoJnxXVc9R8UsNARGYY4s2o=",
+        "bera_hash": "sha256:lJMyxWApw1Mr4PX3mUcDLvo/5Tryj51x5X981CGNsDw=",
+        "policy_id": "uri:eres:policy:2026:test:v1"
+      },
+      "audit_flags": [
+        "CARE_OK",
+        "BERC_OK",
+        "JERC_OK",
+        "PERC_OK"
+      ],
+      "confidence": 0.869293,
+      "veiled_positions": []
+    },
+    "rsig_object": {
+      "payload_hash": "sha256:L3UfG/WdWit7VoLigLzFI70OpzhEM6mBTY3uvIIdes0=",
+      "rate_hash": "sha256:bYyyB/IRKu7hEm9lMj2aD4Os0kQ1VI9ygF1LfEN9LAA=",
+      "timestamp": "2026-04-22T14:32:17.042Z",
+      "nonce": "ABEiM0RVZneImaq7zN3u/w==",
+      "signer_identity": "did:eres:test:engine:0001",
+      "engine_identity": "eres-ref-impl-v1.1.0-test",
+      "policy_id": "uri:eres:policy:2026:test:v1",
+      "compliance_flags": [
+        "CARE_OK",
+        "BERC_OK",
+        "JERC_OK",
+        "PERC_OK"
+      ],
+      "hash_alg": "SHA-256",
+      "sig_alg": "Ed25519",
+      "signature": "fhQv4ZDgfNkkA0iXVEo/ePzYUZxuYiVnKWAxgKJ7s1N08M0hYRQmVjn1rNHlMJErdYN3oJ/amQ9AUTDiZlNuBQ=="
+    },
+    "rsig_signature_hex": "7e142fe190e07cd924034897544a3f78fcd8519c6e62256729603180a27bb35374f0cd216114265639f5acd1e530912b758377a09fda990f405130e266536e05",
+    "status": "ACCEPT"
+  }
+}
