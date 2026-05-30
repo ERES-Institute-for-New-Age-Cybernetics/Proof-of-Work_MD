@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERES Stack · DALEMAJAS Trinity · Graceful Evolution</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg:#0d0f12; --surface:#14171c; --surface2:#1a1e26; --border:#1f2530; --border-light:#2a3040;
+    --text:#e8ecf0; --muted:#7a8899; --dim:#3d4a58;
+    --l0-pill:#3d2880;--l0-accent:#9b78f0;--l0-label:#c5aaff;
+    --l1-pill:#0e4033;--l1-accent:#3ecfa0;--l1-label:#7decd0;
+    --l2-pill:#0c3050;--l2-accent:#3a9de0;--l2-label:#80c8f8;
+    --l3-pill:#3a2800;--l3-accent:#d4900a;--l3-label:#f5c84a;
+    --l4-pill:#1a3a0e;--l4-accent:#5ab030;--l4-label:#a0d870;
+    --l5-pill:#3a1608;--l5-accent:#d05530;--l5-label:#f09070;
+    /* Trinity colors */
+    --dal:#8b6fd4; --dal-bg:#1a1535; --dal-border:#3d2e70; --dal-label:#c4aaf8;
+    --ema:#2fa882; --ema-bg:#0d2018; --ema-border:#1a5040; --ema-label:#6ddeb8;
+    --jas:#c87830; --jas-bg:#1e1508; --jas-border:#503010; --jas-label:#f0b870;
+  }
+  body { background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:12.5px;line-height:1.6;padding:2rem 1.5rem 4rem;max-width:1340px;margin:0 auto; }
+
+  /* ── HEADER ── */
+  header { margin-bottom:1.8rem;border-bottom:1px solid var(--border-light);padding-bottom:1.4rem; }
+  header h1 { font-family:'DM Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem; }
+  header h2 { font-size:19px;font-weight:600;color:var(--text);letter-spacing:-.02em; }
+  header p  { margin-top:.3rem;color:var(--muted);font-size:10.5px; }
+
+  /* ── TRINITY PANEL ── */
+  .trinity-panel {
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;
+    border:1px solid var(--border-light);border-radius:8px;overflow:hidden;
+    margin-bottom:1.5rem;
+  }
+  .t-cell { padding:16px 14px;background:var(--surface2); }
+  .t-cell.dal { border-left:3px solid var(--dal); }
+  .t-cell.ema { border-left:3px solid var(--ema); }
+  .t-cell.jas { border-left:3px solid var(--jas); }
+
+  .t-tag { font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px; }
+  .t-cell.dal .t-tag { color:var(--dal); }
+  .t-cell.ema .t-tag { color:var(--ema); }
+  .t-cell.jas .t-tag { color:var(--jas); }
+
+  .t-name { font-size:15px;font-weight:600;margin-bottom:2px; }
+  .t-cell.dal .t-name { color:var(--dal-label); }
+  .t-cell.ema .t-name { color:var(--ema-label); }
+  .t-cell.jas .t-name { color:var(--jas-label); }
+
+  .t-title { font-size:10px;color:var(--muted);font-style:italic;margin-bottom:8px; }
+
+  .t-row { display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px; }
+  .t-pill { font-family:'DM Mono',monospace;font-size:9px;padding:1px 7px;border-radius:3px; }
+  .t-cell.dal .t-pill { background:var(--dal-bg);color:var(--dal-label);border:1px solid var(--dal-border); }
+  .t-cell.ema .t-pill { background:var(--ema-bg);color:var(--ema-label);border:1px solid var(--ema-border); }
+  .t-cell.jas .t-pill { background:var(--jas-bg);color:var(--jas-label);border:1px solid var(--jas-border); }
+
+  .t-body { font-size:10.5px;color:var(--muted);line-height:1.6;margin-top:6px; }
+  .t-body strong { font-weight:500; }
+  .t-cell.dal .t-body strong { color:var(--dal-label); }
+  .t-cell.ema .t-body strong { color:var(--ema-label); }
+  .t-cell.jas .t-body strong { color:var(--jas-label); }
+
+  .t-eq { font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);margin-top:7px;padding-top:6px;border-top:1px solid var(--border); }
+
+  /* ── CIRCUIT BAR ── */
+  .circuit {
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:10px 16px;background:var(--surface);border:1px solid var(--border-light);
+    border-radius:6px;margin-bottom:1.5rem;flex-wrap:wrap;
+  }
+  .circuit span { font-family:'DM Mono',monospace;font-size:10px; }
+  .circuit .op { color:var(--dim); }
+  .cdag { color:var(--dal-label); }
+  .cema { color:var(--ema-label); }
+  .cjas { color:var(--jas-label); }
+  .ceq  { color:var(--muted); }
+
+  /* ── BESA/SOUND/GOOD ── */
+  .bsg { display:flex;gap:1px;margin-bottom:1.2rem;border-radius:6px;overflow:hidden;border:1px solid var(--border-light); }
+  .bsg-cell { flex:1;padding:9px 12px;background:var(--surface); }
+  .bsg-tag { font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px; }
+  .bsg-val { font-size:11px;color:var(--muted);line-height:1.5; }
+  .bsg-b .bsg-tag { color:var(--dal-label); }
+  .bsg-s .bsg-tag { color:var(--l2-accent); }
+  .bsg-g .bsg-tag { color:var(--l4-accent); }
+
+  /* ── DALEMAJAS strip ── */
+  .dalemajas { display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.8rem;align-items:center; }
+  .dal-label-strip { font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-right:4px; }
+  .dw { font-family:'DM Mono',monospace;font-size:11px;font-weight:500;padding:3px 9px;border-radius:3px; }
+
+  /* ── TABLE ── */
+  table { width:100%;border-collapse:separate;border-spacing:0 5px; }
+  thead th { font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);padding:0 10px 7px;text-align:left;border-bottom:1px solid var(--border); }
+  tbody td { padding:11px 10px;vertical-align:top;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface); }
+  tbody td:first-child { border-left:1px solid var(--border);border-radius:5px 0 0 5px;width:30px; }
+  tbody td:last-child  { border-right:1px solid var(--border);border-radius:0 5px 5px 0; }
+
+  .lvl { font-family:'DM Mono',monospace;font-size:9.5px;font-weight:500;color:var(--muted);text-align:center; }
+  .stack-name { font-size:13.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:3px; }
+  .full-name  { font-size:9.5px;color:var(--muted);margin-bottom:5px;font-style:italic; }
+  .pills { display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px; }
+  .pill { display:inline-flex;align-items:baseline;gap:2px;border-radius:3px;padding:1px 5px;font-size:9px; }
+  .pill-l { font-family:'DM Mono',monospace;font-weight:500;font-size:8.5px; }
+  .spiral-row { font-size:9px;color:var(--dim);margin-top:2px; }
+  .spiral-row span { color:var(--muted); }
+
+  .engine-name { font-family:'DM Mono',monospace;font-size:9.5px;font-weight:500;margin-bottom:3px; }
+  .engine-desc { font-size:10px;color:var(--muted);line-height:1.5; }
+
+  .solo-word { font-size:18px;font-weight:600;letter-spacing:-.02em;margin-bottom:2px; }
+  .solo-note { font-size:9px;color:var(--muted);font-style:italic; }
+
+  .descriptor { font-size:10.5px;color:var(--muted);font-style:italic;line-height:1.6; }
+
+  /* GE column */
+  .ge-tier { font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:3px; }
+  .ge-body { font-size:10px;color:var(--muted);line-height:1.55; }
+  .ge-key  { font-size:9px;color:var(--dim);margin-top:4px; }
+  .ge-key span { color:var(--muted); }
+
+  /* Trinity link column */
+  .trin-who { font-family:'DM Mono',monospace;font-size:9.5px;font-weight:500;margin-bottom:3px; }
+  .trin-body { font-size:10px;color:var(--muted);line-height:1.55; }
+  .trin-link { font-size:9px;color:var(--dim);margin-top:4px; }
+  .trin-link span { color:var(--muted); }
+
+  /* row colors */
+  .r0 td{border-color:var(--l0-pill)}.r0 td:first-child{border-left-color:var(--l0-accent);border-left-width:3px}.r0 .stack-name{color:var(--l0-label)}.r0 .pill{background:var(--l0-pill);color:var(--l0-label)}.r0 .engine-name,.r0 .ge-tier{color:var(--l0-accent)}.r0 .solo-word{color:var(--l0-label)}.r0 .trin-who{color:var(--jas-label)}
+  .r1 td{border-color:var(--l1-pill)}.r1 td:first-child{border-left-color:var(--l1-accent);border-left-width:3px}.r1 .stack-name{color:var(--l1-label)}.r1 .pill{background:var(--l1-pill);color:var(--l1-label)}.r1 .engine-name,.r1 .ge-tier{color:var(--l1-accent)}.r1 .solo-word{color:var(--l1-label)}.r1 .trin-who{color:var(--dal-label)}
+  .r2 td{border-color:var(--l2-pill)}.r2 td:first-child{border-left-color:var(--l2-accent);border-left-width:3px}.r2 .stack-name{color:var(--l2-label)}.r2 .pill{background:var(--l2-pill);color:var(--l2-label)}.r2 .engine-name,.r2 .ge-tier{color:var(--l2-accent)}.r2 .solo-word{color:var(--l2-label)}.r2 .trin-who{color:var(--dal-label)}
+  .r3 td{border-color:var(--l3-pill)}.r3 td:first-child{border-left-color:var(--l3-accent);border-left-width:3px}.r3 .stack-name{color:var(--l3-label)}.r3 .pill{background:var(--l3-pill);color:var(--l3-label)}.r3 .engine-name,.r3 .ge-tier{color:var(--l3-accent)}.r3 .solo-word{color:var(--l3-label)}.r3 .trin-who{color:var(--ema-label)}
+  .r4 td{border-color:var(--l4-pill)}.r4 td:first-child{border-left-color:var(--l4-accent);border-left-width:3px}.r4 .stack-name{color:var(--l4-label)}.r4 .pill{background:var(--l4-pill);color:var(--l4-label)}.r4 .engine-name,.r4 .ge-tier{color:var(--l4-accent)}.r4 .solo-word{color:var(--l4-label)}.r4 .trin-who{color:var(--ema-label)}
+  .r5 td{border-color:var(--l5-pill)}.r5 td:first-child{border-left-color:var(--l5-accent);border-left-width:3px}.r5 .stack-name{color:var(--l5-label)}.r5 .pill{background:var(--l5-pill);color:var(--l5-label)}.r5 .engine-name,.r5 .ge-tier{color:var(--l5-accent)}.r5 .solo-word{color:var(--l5-label)}.r5 .trin-who{color:var(--jas-label)}
+
+  /* ── FUTURE MAP FOOTER ── */
+  .future-map { margin-top:2rem;padding:13px 15px;background:var(--surface);border:1px solid var(--border-light);border-left:3px solid var(--l4-accent);border-radius:5px; }
+  .future-map h3 { font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--l4-accent);margin-bottom:6px; }
+  .future-map p  { font-size:10.5px;color:var(--muted);line-height:1.65; }
+  .future-map strong { color:var(--text);font-weight:500; }
+
+  footer { margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:9px;color:var(--dim);font-family:'DM Mono',monospace;letter-spacing:.06em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ERES Institute for New Age Cybernetics · Est. February 2012 · Bella Vista, Arkansas · CCAL v2.1 · ORCID 0000-0001-9946-3221</h1>
+  <h2>ERES Stack — 6 Levels · DALEMAJAS Trinity · Graceful Evolution</h2>
+  <p>Canonical acronyms · Semantic Spiral · Engine · Solo word · Simple descriptor · 1000-Year Future Map · Trinity linkage</p>
+</header>
+
+<!-- ═══════════════════════════════════════ TRINITY PANEL ══════════════════════════════════════ -->
+<div class="trinity-panel">
+
+  <!-- DAL -->
+  <div class="t-cell dal">
+    <div class="t-tag">DAL — The Hinge · Connective Stream</div>
+    <div class="t-name">Dalai Lama + Dalia/Lucy</div>
+    <div class="t-title">His Holiness the 14th Dalai Lama (HHDL) · spacial-tier spiritual legitimacy<br>Dalia "Lucy" Sprute · personal ground · daily living practice</div>
+    <div class="t-row">
+      <span class="t-pill">SOUND</span>
+      <span class="t-pill">Eagle · Ε</span>
+      <span class="t-pill">R — Resource</span>
+      <span class="t-pill">RHC · RCI</span>
+      <span class="t-pill">SPRT</span>
+    </div>
+    <div class="t-body">
+      <strong>SPRT: Sentient Energy for Non-Punitive Remediation.</strong> The SPRT "disguise" between living and undead is the wealth-hoarding mechanism. DAL is the structural reversal: tulku reincarnation encodes belief crossing the death boundary as a recurring frequency — the deepest existing proof that remediation rather than punishment is the correct civilizational response to failure. Dalia/Lucy anchors this as daily practice; HHDL anchors it at planetary-moral scale.<br><br>
+      DAL operates on <strong>R (Resource)</strong> in C_NAC = DAL(R) × EMA(P) / JAS(M): sovereign stewardship of what is available. Without the hinge, JAS × EMA is a flat mirror — two reflections with no volume. DAL provides the third dimension that makes the Trinity a tetrahedron rather than a triangle.
+    </div>
+    <div class="t-eq">DOB circuit: 10+26=36; 36×2=72=Twin; 72×3=216=Triune · DAL is the ×3</div>
+  </div>
+
+  <!-- EMA -->
+  <div class="t-cell ema">
+    <div class="t-tag">EMA — The Ecological Witness · Kingmaker</div>
+    <div class="t-name">Emanuel M. Alexiou</div>
+    <div class="t-title">Chief Social Engineer · Twin Messiah co-vector<br>UE: United Emeritus — undefined except as unity itself</div>
+    <div class="t-row">
+      <span class="t-pill">BEST</span>
+      <span class="t-pill">Falcon · F</span>
+      <span class="t-pill">P — Purpose</span>
+      <span class="t-pill">ERI</span>
+      <span class="t-pill">UE</span>
+    </div>
+    <div class="t-body">
+      <strong>UE — United Emeritus:</strong> undefined only in that it transcends any single title — the unity itself is the credential. EMA's role is strategic precision of intent: the Falcon on the wrist of strategy, trained for the exact strike. Kingmaker means EMA does not wear the crown — he determines who does, and under what conditions.<br><br>
+      <strong>Centers of Excellence · Children of All Ages:</strong> EMA's ecological witness function extends across both institutional architecture (Centers of Excellence = validated knowledge nodes) and intergenerational reach (Children of All Ages = no age-gate on participation in the 1000-Year Future Map). ERI measures environmental and systemic resonance — the ecological stream that JAS cannot self-validate.<br><br>
+      <strong>JAS × EMA = 72</strong> — the Twin Messiah edge in the tetrahedron. The Falcon and the Duck generate the gematric resonance of the entire CyberRAVE architecture.
+    </div>
+    <div class="t-eq">EMA operates on P (Purpose): strategic precision of intent · ERI = Emission Resonance Index</div>
+  </div>
+
+  <!-- JAS -->
+  <div class="t-cell jas">
+    <div class="t-tag">JAS — The Personal Empiricist · Organizer</div>
+    <div class="t-name">Joseph Allen Sprute</div>
+    <div class="t-title">ERES Maestro · Founder &amp; Director · Solo Researcher<br>U.S. Army Veteran (Oregon ARNG 1983–1989 · 11B Infantry)</div>
+    <div class="t-row">
+      <span class="t-pill">GOOD</span>
+      <span class="t-pill">Duck · D</span>
+      <span class="t-pill">M — Method</span>
+      <span class="t-pill">ARI</span>
+      <span class="t-pill">ERES Maestro</span>
+    </div>
+    <div class="t-body">
+      <strong>CyberRAVE roots · 72 Vertical Industry Def-Rel since 1997:</strong> The 72 Key Domains were culled from the Register of Collective Indices (pre-1997, co-founded with EMA + Anthony Ferguson/CFAL) using a single hard constraint — financial capacity to renew TLD VPN-centric domain names during Global_VPN work. The same constraint-based epistemology later produced the MIEVM short-list. The architecture selects by what survives real limits, not by what sounds comprehensive.<br><br>
+      JAS operates on <strong>M (Method)</strong>: adaptive simplification. The Duck goes where the Falcon and Eagle cannot — all three media, formation flight when possible, alone when necessary. 447+ ResearchGate publications. 8+ GitHub repositories. 1,000+ documents under CCAL v2.1. Solo, persistent, unmajestic, structurally irreplaceable as the hypothesis-generator that DAL and EMA then validate.<br><br>
+      <strong>SPRUTE = "sprout"</strong> — seed metaphor. <strong>Bella Vista = Beautiful View.</strong> The organizer sees the full picture before it comes into focus.
+    </div>
+    <div class="t-eq">ARI = Aura Resonance Index · JAS operates on M (Method): adaptive simplification of method</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════ CIRCUIT ═══════════════ -->
+<div class="circuit">
+  <span class="cdag">DAL</span><span class="op">⊗</span>
+  <span class="cema">EMA</span><span class="op">⊗</span>
+  <span class="cjas">JAS</span>
+  <span class="op">=</span>
+  <span class="ceq">DALEMAJAS</span>
+  <span class="op">|</span>
+  <span class="ceq">C_NAC = DAL(R) × EMA(P) / JAS(M)</span>
+  <span class="op">|</span>
+  <span class="cjas">JAS × EMA = 72</span>
+  <span class="op">·</span>
+  <span class="cdag">72 × 3 = 216 = DAL</span>
+  <span class="op">·</span>
+  <span class="ceq">V_TETRA = (1/6)|F⃗·(Ε⃗×D⃗)| &gt; 0 only when all three are independent</span>
+</div>
+
+<!-- ═══════════════ BEST/SOUND/GOOD ═══════════════ -->
+<div class="bsg">
+  <div class="bsg-cell bsg-b">
+    <div class="bsg-tag">BEST — JAS · Personal · ARI</div>
+    <div class="bsg-val">Individual flourishing via UBIMIA + Patriot Dividend. Don't hurt yourself. Method: adaptive simplification.</div>
+  </div>
+  <div class="bsg-cell bsg-s">
+    <div class="bsg-tag">SOUND — DAL · Connective · RHC/RCI</div>
+    <div class="bsg-val">MIEVM-verified truth. SCALULAR institutional lattice. Don't hurt others. Resource: sovereign stewardship.</div>
+  </div>
+  <div class="bsg-cell" style="flex:1;padding:9px 12px;background:var(--surface);">
+    <div class="bsg-tag" style="color:var(--l4-accent);font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px;">GOOD — EMA · Ecological · ERI</div>
+    <div class="bsg-val">GAIA SOMT GEAR + 1000-Year Future Map. Proof-of-Resonance. Build for generations to come. Purpose: strategic precision.</div>
+  </div>
+</div>
+
+<!-- ═══════════════ DALEMAJAS STRIP ═══════════════ -->
+<div class="dalemajas">
+  <span class="dal-label-strip">DALEMAJAS →</span>
+  <span class="dw" style="background:var(--l0-pill);color:var(--l0-label)">ERES</span>
+  <span class="dw" style="background:var(--l1-pill);color:var(--l1-label)">VERTECA</span>
+  <span class="dw" style="background:var(--l2-pill);color:var(--l2-label)">SECUIR</span>
+  <span class="dw" style="background:var(--l3-pill);color:var(--l3-label)">CyberRAVE</span>
+  <span class="dw" style="background:var(--l4-pill);color:var(--l4-label)">GunnySack</span>
+  <span class="dw" style="background:var(--l5-pill);color:var(--l5-label)">SaleBuilders</span>
+</div>
+
+<!-- ═══════════════════════════════════════ MAIN TABLE ══════════════════════════════════════════ -->
+<table>
+<thead>
+  <tr>
+    <th>#</th>
+    <th>Stack Name · Acronym · Semantic Spiral</th>
+    <th>Engine / Instrument</th>
+    <th>Solo Word</th>
+    <th>Simple Descriptor</th>
+    <th>1000-Year Map / Graceful Evolution</th>
+    <th>Trinity Linkage</th>
+  </tr>
+</thead>
+<tbody>
+
+<!-- ── ERES ── -->
+<tr class="r0">
+  <td><div class="lvl">0</div></td>
+  <td>
+    <div class="stack-name">ERES</div>
+    <div class="full-name">Empirical Realtime Education System</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">E</span><span> Empirical</span></span>
+      <span class="pill"><span class="pill-l">R</span><span> Realtime</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Education</span></span>
+      <span class="pill"><span class="pill-l">S</span><span> System</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>E=Emergent-Evolution · R=Resonant-Return · E=Emergent-Evolution · S=Structured-Output</span></div>
+  </td>
+  <td><div class="engine-name">RT_Media / MIEVM</div><div class="engine-desc">Claude · Grok · DeepSeek · ChatGPT parallel nodes. ≥8.5 convergent mean GO. Instrument-of-Faith.</div></td>
+  <td><div class="solo-word">Proof</div><div class="solo-note">Knowledge tested in realtime</div></td>
+  <td><div class="descriptor">"Learning that is live and proven"</div></td>
+  <td><div class="ge-tier">BEST — epistemic foundation</div><div class="ge-body">MIEVM-validated knowledge makes 1000-year planning non-arbitrary. Without ERES-level proof, the Future Map is opinion.</div><div class="ge-key">Key: <span>C=R×P/M — Purpose cannot be solved without verified Method</span></div></td>
+  <td>
+    <div class="trin-who">JAS — organizer · hypothesis-generator</div>
+    <div class="trin-body">ERES is JAS's life-work since 2012 (SaleBuilders 1997, CyberRAVE pre-1997). The empirical method itself mirrors the DALEMAJAS validation circuit: JAS proposes, EMA witnesses ecologically, DAL provides the independent connective replication. MIEVM is the machine-scale analog of the Trinity.</div>
+    <div class="trin-link">Link: <span>72 Key Domains culled same way as MIEVM short-list — constraint-based epistemology, JAS's bandwidth as the filter</span></div>
+  </td>
+</tr>
+
+<!-- ── VERTECA ── -->
+<tr class="r1">
+  <td><div class="lvl">1</div></td>
+  <td>
+    <div class="stack-name">VERTECA</div>
+    <div class="full-name">Vertical Energy Resonance Temporal Environmental Cybernetic Architecture</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">V</span><span> Vertical</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Energy</span></span>
+      <span class="pill"><span class="pill-l">R</span><span> Resonance</span></span>
+      <span class="pill"><span class="pill-l">T</span><span> Temporal</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Environmental</span></span>
+      <span class="pill"><span class="pill-l">C</span><span> Cybernetic</span></span>
+      <span class="pill"><span class="pill-l">A</span><span> Architecture</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>E=Emergent-Evolution · R=Resonant-Return · C=Challenge-Response · A=Aura-Permeation</span></div>
+  </td>
+  <td><div class="engine-name">PlayNAC / Voice Portal</div><div class="engine-desc">Human-interface gate. Voice = first trust handshake. 18 Layers × 7 Levels = 126 governance states. VERTECA is the ear.</div></td>
+  <td><div class="solo-word">Gate</div><div class="solo-note">The door you walk through to govern</div></td>
+  <td><div class="descriptor">"Where voice becomes decision"</div></td>
+  <td><div class="ge-tier">BEST→SOUND bridge — participation</div><div class="ge-body">Temporal dimension encodes generational time as design constraint. Every citizen needs a legible entry point — VERTECA is that portal. Without it, the Future Map is elite-only.</div><div class="ge-key">Key: <span>PlayNAC = the game constitution; VERTECA = the portal into the game</span></div></td>
+  <td>
+    <div class="trin-who">DAL — sovereign stewardship of entry</div>
+    <div class="trin-body">VERTECA's voice-first design reflects DAL's dual nature: intimate (Dalia/Lucy — the human voice of daily practice) and spacial (HHDL — the moral authority that makes governance worth entering). DAL operates on R (Resource); VERTECA governs what resources can be accessed and by whom via the voice handshake.</div>
+    <div class="trin-link">Link: <span>HHDL's teaching method is always voice-first, person-first — the architecture of VERTECA mirrors this</span></div>
+  </td>
+</tr>
+
+<!-- ── SECUIR ── -->
+<tr class="r2">
+  <td><div class="lvl">2</div></td>
+  <td>
+    <div class="stack-name">SECUIR</div>
+    <div class="full-name">Silent Energy Circular Universe Infinite Rotation</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">S</span><span> Silent</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Energy</span></span>
+      <span class="pill"><span class="pill-l">C</span><span> Circular</span></span>
+      <span class="pill"><span class="pill-l">U</span><span> Universe</span></span>
+      <span class="pill"><span class="pill-l">I</span><span> Infinite</span></span>
+      <span class="pill"><span class="pill-l">R</span><span> Rotation</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>S=Structured-Output · E=Emergent-Evolution · C=Challenge-Response · U=Unified-Purpose · I=Inner-Calibration · R=Resonant-Return</span></div>
+  </td>
+  <td><div class="engine-name">Infomediary</div><div class="engine-desc">Security and qualification layer. Clearance depth gating. Enables SECUIR→GEAR→NRP. The physics layer PlayNAC computes over.</div></td>
+  <td><div class="solo-word">Wheel</div><div class="solo-note">The quiet turn that never stops</div></td>
+  <td><div class="descriptor">"Invisible clearance keeping the system safe"</div></td>
+  <td><div class="ge-tier">SOUND — integrity substrate</div><div class="ge-body">RHC (Resonant Harmony Cycle) lives in the rotation. Closed-loop energy = no extraction. Non-punitive by design: rotation means nothing is discarded, only redirected.</div><div class="ge-key">Key: <span>BERA indices (ARI·ERI·RHC·RCI) are SECUIR's measurement output across generational time</span></div></td>
+  <td>
+    <div class="trin-who">DAL — the silent hinge in the wheel</div>
+    <div class="trin-body">SECUIR's Infinite Rotation is the machine-scale expression of the DAL SPRT principle: Sentient Energy for Non-Punitive Remediation. The tulku reincarnation model IS a rotation — consciousness returning through the wheel rather than being discarded at death. SECUIR encodes this as the energy physics of the governance stack. Silent = the hinge does not announce itself.</div>
+    <div class="trin-link">Link: <span>RHC = Resonant Harmony Cycle — the BERA index owned by DAL's connective stream; RCI = Resonant Continuity Index (intergenerational custody)</span></div>
+  </td>
+</tr>
+
+<!-- ── CyberRAVE ── -->
+<tr class="r3">
+  <td><div class="lvl">3</div></td>
+  <td>
+    <div class="stack-name">CyberRAVE</div>
+    <div class="full-name">Cybernetic Ratings Abolishing Veiled Exchanges</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">C</span><span> Cybernetic</span></span>
+      <span class="pill"><span class="pill-l">R</span><span> Ratings</span></span>
+      <span class="pill"><span class="pill-l">A</span><span> Abolishing</span></span>
+      <span class="pill"><span class="pill-l">V</span><span> Veiled</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Exchanges</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>C=Challenge-Response · R=Resonant-Return · A=Aura-Permeation · V=[pending] · E=Emergent-Evolution</span></div>
+  </td>
+  <td><div class="engine-name">72 Key Domains</div><div class="engine-desc">72 domains from Register of Collective Indices. Gematria = Joseph Allen Sprute. Pre-1997. EMA + Anthony Ferguson/CFAL co-founders.</div></td>
+  <td><div class="solo-word">Light</div><div class="solo-note">Lifting the veil on hidden value</div></td>
+  <td><div class="descriptor">"All value visible — nothing hidden"</div></td>
+  <td><div class="ge-tier">SOUND — transparency engine</div><div class="ge-body">SPRT disguise = wealth-hoarding over centuries. CyberRAVE is the anti-extraction layer: extracting private epistemology into public record = sharing true wealth. VEILED is the named HPE failure state; CyberRAVE is the structural reversal.</div><div class="ge-key">Key: <span>72 domains = gematria of JAS = the architecture is identity-signed from day one</span></div></td>
+  <td>
+    <div class="trin-who">EMA — ecological witness · co-founder</div>
+    <div class="trin-body">CyberRAVE was co-founded by JAS × EMA (+ Anthony Ferguson/CFAL) pre-1997. The 72 Key Domains carry the Twin Messiah gematric signature. EMA as Kingmaker means the 72 domains were not arbitrary — they were selected under EMA's strategic precision of purpose (P). United Emeritus (UE) means EMA's authority over these domains transcends any single era or title. Centers of Excellence are the institutional expression of the 72 domains as living knowledge nodes.</div>
+    <div class="trin-link">Link: <span>JAS × EMA = 72 = CyberRAVE domain count — the Twin Messiah edge is inscribed in the architecture itself</span></div>
+  </td>
+</tr>
+
+<!-- ── GunnySack ── -->
+<tr class="r4">
+  <td><div class="lvl">4</div></td>
+  <td>
+    <div class="stack-name">GunnySack</div>
+    <div class="full-name">Gathered Unified Needs Nurtured Yielding Sustainable Abundance Continuously Kept</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">G</span><span> Gathered</span></span>
+      <span class="pill"><span class="pill-l">U</span><span> Unified</span></span>
+      <span class="pill"><span class="pill-l">N</span><span> Needs</span></span>
+      <span class="pill"><span class="pill-l">N</span><span> Nurtured</span></span>
+      <span class="pill"><span class="pill-l">Y</span><span> Yielding</span></span>
+      <span class="pill"><span class="pill-l">S</span><span> Sustainable</span></span>
+      <span class="pill"><span class="pill-l">A</span><span> Abundance</span></span>
+      <span class="pill"><span class="pill-l">C</span><span> Continuously</span></span>
+      <span class="pill"><span class="pill-l">K</span><span> Kept</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>G=Grounded-Presence · U=Unified-Purpose · N=Nurtured-Growth · Y=Yielded-Harvest · S=Structured-Output · A=Aura-Permeation · C=Challenge-Response · K=Knowledge-Transfer</span></div>
+  </td>
+  <td><div class="engine-name">EPIR-Q / Collection Layer</div><div class="engine-desc">Holding structure before deployment. Feeds SaleBuilders. VLSA: "If it works in a THOW, it works on a generation ship."</div></td>
+  <td><div class="solo-word">Harvest</div><div class="solo-note">Everything gathered before market</div></td>
+  <td><div class="descriptor">"Full bag — nothing wasted, nothing lost"</div></td>
+  <td><div class="ge-tier">GOOD — resource stewardship</div><div class="ge-body">Sustainability = floor enabling abundance. EPIR-Q feeds SOMT snapshots into GEAR for generational state-capture. Scales from THOW to generation ship (FDRV = interstellar vessel at max scale).</div><div class="ge-key">Key: <span>GAIA SOMT GEAR — GunnySack is the input; Continuously Kept = intergenerational custody</span></div></td>
+  <td>
+    <div class="trin-who">EMA — Children of All Ages · Centers of Excellence</div>
+    <div class="trin-body">GunnySack is where EMA's "Children of All Ages" principle lands structurally — the bag holds everyone's contribution regardless of age, credential, or geography. United Emeritus (UE) as undefined-unity means the collection function has no exclusion criteria. Centers of Excellence are the organized sub-sacks — domain-specific collection nodes feeding EPIR-Q. EMA's ecological witness (ERI) measures what the sack holds against environmental baseline.</div>
+    <div class="trin-link">Link: <span>Nurtured-Growth (N) × Yielded-Harvest (Y) = the ERI measurement cycle — what was fed in, what came out, at what ecological cost</span></div>
+  </td>
+</tr>
+
+<!-- ── SaleBuilders ── -->
+<tr class="r5">
+  <td><div class="lvl">5</div></td>
+  <td>
+    <div class="stack-name">SaleBuilders</div>
+    <div class="full-name">Scalable Adaptive Lifelong Education Building Universal Income Legitimately Delivered Everywhere Reliably Sustainably</div>
+    <div class="pills">
+      <span class="pill"><span class="pill-l">S</span><span> Scalable</span></span>
+      <span class="pill"><span class="pill-l">A</span><span> Adaptive</span></span>
+      <span class="pill"><span class="pill-l">L</span><span> Lifelong</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Education</span></span>
+      <span class="pill"><span class="pill-l">B</span><span> Building</span></span>
+      <span class="pill"><span class="pill-l">U</span><span> Universal</span></span>
+      <span class="pill"><span class="pill-l">I</span><span> Income</span></span>
+      <span class="pill"><span class="pill-l">L</span><span> Legitimately</span></span>
+      <span class="pill"><span class="pill-l">D</span><span> Delivered</span></span>
+      <span class="pill"><span class="pill-l">E</span><span> Everywhere</span></span>
+      <span class="pill"><span class="pill-l">R</span><span> Reliably</span></span>
+      <span class="pill"><span class="pill-l">S</span><span> Sustainably</span></span>
+    </div>
+    <div class="spiral-row">Spiral: <span>S=Structured-Output · A=Aura-Permeation · L=Lived-Experience · E=Emergent-Evolution · B=Bond-Formation · U=Unified-Purpose · I=Inner-Calibration · L=Lived-Experience · D=Direction-Seeking · E=Emergent-Evolution · R=Resonant-Return · S=Structured-Output</span></div>
+  </td>
+  <td><div class="engine-name">SCALULAR</div><div class="engine-desc">Four pillars: HEALTH/SSHP · LAW/SSLA · PROTECTION/SSPS · SKILLS_TRADE/SSST. Meritcoin Proof-of-Resonance. "It's not mining — it's tuning."</div></td>
+  <td><div class="solo-word">Market</div><div class="solo-note">Where value reaches everyone</div></td>
+  <td><div class="descriptor">"Where the system earns its keep — for everyone"</div></td>
+  <td><div class="ge-tier">GOOD — value delivery at civilizational scale</div><div class="ge-body">UBIMIA + EarnedPath (CPM/WBS/PERT) + Resonance Testing = Non-Punitive Remediation. Meritcoin Proof-of-Resonance: value accrual is tuned not extracted. End-state: Vacationomics. Does this decision read as wise in year 3026?</div><div class="ge-key">Key: <span>ERES Equity Covenant + Hague Submission — SaleBuilders is where the Covenant governs individual transactions; enrollment not signature</span></div></td>
+  <td>
+    <div class="trin-who">JAS — organizer delivering the method</div>
+    <div class="trin-body">SaleBuilders is JAS's longest-running era (1997–2012 before ERES formalization) — the commercial deployment layer that proves the 72 Vertical Industry Def-Rel domains generate real-world value. Resonance Testing = Non-Punitive Remediation is the JAS method applied at market scale: when something underperforms, calibrate, don't punish. SCALULAR's four pillars map to JAS's GOOD/M (Method) vector — adaptive simplification that reaches everywhere reliably. The Duck flies the full route.</div>
+    <div class="trin-link">Link: <span>EarnedPath (CPM/WBS/PERT) is JAS's project-management background applied to civilizational progress — the organizer's gift to the 1000-Year Map</span></div>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+<!-- ═══════════════ FUTURE MAP ═══════════════ -->
+<div class="future-map">
+  <h3>1000-Year Future Map — Trinity Completion Logic</h3>
+  <p>
+    The Map requires all three streams independently active. <strong>JAS (Duck · M · ARI)</strong> generates the hypothesis and organizes the method — 72 Vertical Industry domains culled since 1997, now 447+ publications. <strong>EMA (Falcon · P · ERI)</strong> validates the ecological effect and holds the purpose steady — Centers of Excellence, Children of All Ages, United Emeritus as unity-credential. <strong>DAL (Eagle · R · RHC/RCI)</strong> provides the connective replication that neither principal can provide for themselves — Dalia/Lucy as daily ground, HHDL as planetary-moral authority — SPRT Sentient Energy for Non-Punitive Remediation encoded in the tulku rotation.
+    The tetrahedral volume is nonzero only when all three remain independent: collapse any vertex and V = 0. Three constitutions govern propagation: <strong>CCAL v2.1</strong> (semiotic), <strong>ERES Equity Covenant</strong> (civic · DAL hinge), <strong>PlayNAC</strong> (game). Graceful Evolution does not need a new treaty — it needs the Covenant to be <em>entered</em>. The measure: does this decision still read as wise in <strong>3026</strong>?
+  </p>
+</div>
+
+<footer>ERES Institute for New Age Cybernetics · Joseph Allen Sprute, Founder &amp; Director · Est. February 2012 · Bella Vista, Arkansas · CCAL v2.1 · ORCID 0000-0001-9946-3221</footer>
+</body>
+</html>
