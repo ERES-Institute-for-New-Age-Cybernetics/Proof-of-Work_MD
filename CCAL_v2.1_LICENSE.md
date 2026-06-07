@@ -1,258 +1,378 @@
-# **CARE Commons Attribution License v2.1 (CCAL v2.1)**
-
-**Version:** 2.1
-**Effective Date:** April 26, 2026
-**Steward:** ERES Institute for New Age Cybernetics
-**Author of Record:** Joseph Allen Sprute (ORCID: 0000-0001-9946-3221)
-**Successor to:** CCAL v2.0 (2024), CCAL v1.0 (2012)
-**Compatibility Statement:** Functionally compatible with Creative Commons Attribution 4.0 International (CC-BY 4.0) in its attribution requirements; adds provisions specific to the ERES corpus governing the continuity of attribution across derivative works, ensemble-validated outputs, and long-horizon governance instruments.
+# CARE Commons Attribution License v2.1 (CCAL)
+## ERES Institute for New Age Cybernetics
+### Bella Vista, Arkansas · est. February 2012
+### License Steward: Joseph Allen Sprute (ORCID: 0000-0001-9946-3221)
 
 ---
 
-## **Preamble**
+## PREAMBLE
 
-The CARE Commons Attribution License v2.1 ("CCAL v2.1" or "this License") is the governing open-licensing framework for works produced by, deposited within, or derived from the ERES Institute for New Age Cybernetics ("the Institute"). The Institute is an independent research body established in February 2012 in Bella Vista, Arkansas; it is not constituted as a business. Its outputs include peer-reviewed publications, architectural specifications, governance instruments, simulation environments, attestation protocols, and educational materials, accumulated over fourteen years and continuing.
+The CARE Commons Attribution License v2.1 (CCAL) is the governing
+open-licensing instrument for all outputs of the ERES Institute for
+New Age Cybernetics. ERES Institute is not constituted as a business.
+It is a lived constitutional act — a solo-orbit independent research
+body operating under the Three Governing Principles:
 
-CCAL v2.1 exists because the works it covers are intended to function as civilizational infrastructure on multi-generational timescales. Standard licenses optimized for software, prose, or media each cover part of what is needed, but none alone covers the full surface: durable attribution across ensemble-validated outputs; non-enclosure of derivative governance instruments; alignment with the Three Governing Principles; protection of good-faith use; and a defensible posture against extractive use at planetary cost.
+> *Don't hurt yourself. Don't hurt others. Build for generations to come.*
 
-This License grants broad freedoms to share, adapt, study, teach, build upon, and commercialize services around the covered works. In exchange, the License asks that you keep attribution intact, leave the commons more open than you found it, and act in conformity with the Three Governing Principles. Nothing more is asked. Nothing less is sufficient.
+CCAL encodes those principles into the terms under which ERES knowledge
+is shared. It is designed to maximize open access, protect attribution
+integrity across long-horizon instruments, and prevent exploitative
+extraction of knowledge produced without institutional resources.
 
----
-
-## **Definitions**
-
-For the purposes of this License:
-
-**"Work"** means any text, image, data, source code, schematic, specification, recording, model output, derivative composition, or other expression to which this License has been applied by the Author or by the Institute.
-
-**"Author"** means Joseph Allen Sprute and any co-authors named in the Work, acting under the auspices of the Institute.
-
-**"Institute"** means the ERES Institute for New Age Cybernetics, the License Steward and the source institution for the corpus.
-
-**"Licensee"** means any natural or legal person who exercises any right granted under this License.
-
-**"Adaptation" / "Derivative Work"** means a work derived from, translated from, transformed from, or built upon the Work, including ensemble-validated outputs that incorporate the Work as a substantive input.
-
-**"Three Governing Principles"** means the three rules upon which CCAL v2.1 rests, stated in their exact and locked form:
-
-> 1. Don't hurt yourself.
-> 2. Don't hurt others.
-> 3. Build for generations to come.
-
-**"Care Clause"** means the operative requirement, set forth in Section 2 below, that all use of the Work conform to the Three Governing Principles.
-
-**"Grace Protocol"** means the Institute's stated commitment to shield good-faith licensees acting in conformity with the Care Clause from retaliatory enforcement.
-
-**"Earth-First Constraint"** means the requirement, set forth in Section 3 below, that the Work be used in service of planetary integrity rather than in service of extractive, sectarian, or self-only logic at planetary cost.
+CCAL is **functionally compatible** with Creative Commons Attribution
+4.0 International (CC-BY-4.0) in its attribution requirements, and
+extends CC-BY-4.0 with provisions specific to the ERES corpus. The
+relationship between CCAL v2.1 and CC-BY-4.0 is explained in full
+at the end of this document.
 
 ---
 
-## **Grant of Rights**
+## SECTION 1 — DEFINITIONS
 
-Subject to the Conditions set forth in Sections 1 through 8 below, the Institute hereby grants to every Licensee a worldwide, royalty-free, non-exclusive, perpetual (for the duration of applicable copyright) license to:
+**"Work"** means any document, instrument, codebase, dataset, white
+paper, preprint, ontology, protocol, or derivative thereof produced
+by or under the direction of the ERES Institute for New Age Cybernetics
+and released under this license.
 
-- **Share** — reproduce the Work, in whole or in part, in any medium or format.
-- **Adapt** — translate, transform, remix, and build upon the Work for any purpose, including commercial purposes.
-- **Cite and Quote** — quote, cite, paraphrase, and reference the Work in academic, journalistic, governmental, and enterprise contexts.
-- **Implement** — implement the architectures, protocols, and methods described in the Work in software, hardware, governance, or institutional form.
-- **Distribute Derivative Works** — distribute Adaptations and Derivative Works under the conditions of Section 5 (Share-Forward).
-- **Charge for Services** — offer paid services, implementation, training, consulting, or support based on the Work, provided that the Work itself remains freely available under this License.
+**"ERES Corpus"** means the complete interwoven body of Works,
+including VERTECA, CyberRAVE, and RT_Media outputs, confirmed as
+corpus derivatives under CCAL v2.1.
 
-These rights are granted to all Licensees on equal terms. No additional permission, royalty payment, or registration is required.
+**"Licensor"** means Joseph Allen Sprute and the ERES Institute for
+New Age Cybernetics.
 
----
+**"Licensee"** means any person or entity exercising rights under
+this license.
 
-## **Conditions of the License**
+**"Derivative Work"** means any work that incorporates, adapts,
+translates, or builds upon the Work in any form.
 
-The grant above is conditioned on continuing observance of the following.
+**"MIEVM Output"** means any instrument produced through the
+Multi-Instrument Ensemble Validation Method operative in the ERES
+corpus — including ensemble-validated ratings, convergent composites,
+and co-produced instruments — which remains a corpus derivative
+regardless of which AI instruments participated in its production.
 
-### **1. Attribution (Required)**
-
-Every public use, redistribution, or Adaptation of the Work must include the following attribution, in a form reasonable to the medium:
-
-> *Joseph Allen Sprute / ERES Institute for New Age Cybernetics. Licensed under CCAL v2.1.*
-
-Where space permits, attribution should additionally include the ORCID identifier (`0000-0001-9946-3221`) and a link to the License text. Where space is severely limited (social media, headers, footers), the shortened form "JAS / ERES — CCAL v2.1" is acceptable.
-
-Attribution must be continuous: Adaptations and Derivative Works carry forward the original attribution alongside any attribution to the adapter. Removal of upstream attribution is a license violation.
-
-### **2. Care Clause — The Three Governing Principles**
-
-All use of the Work must conform to the Three Governing Principles:
-
-> 1. Don't hurt yourself.
-> 2. Don't hurt others.
-> 3. Build for generations to come.
-
-Use that violates the Care Clause — including use to facilitate self-harm, harm to third parties, or the foreclosure of options for future generations — is outside the scope of the License grant. Such use is not licensed and constitutes infringement.
-
-The Care Clause is not a guideline. It is an operative condition of the grant.
-
-### **3. Earth-First Constraint**
-
-Use of the Work must serve planetary integrity. Use that serves self-only logic, sectarian logic, or extractive logic at planetary cost is outside the scope of the License grant.
-
-In its canonical ERES formulation: *Use must serve the One Master (FEE_MALE == Semantic === Earth First).* In plain operational terms: where a use would foreseeably degrade planetary life-support systems, biospheric integrity, or the conditions for multi-generational human flourishing, that use is not licensed regardless of any other apparent compliance with this License.
-
-### **4. Transparency**
-
-Adaptations and Derivative Works that are publicly distributed must:
-
-- Clearly mark what has been changed relative to the source Work;
-- Document material modifications in a form discoverable by downstream Licensees (a CHANGELOG, version history, or equivalent);
-- Make the source materials of the Adaptation publicly available where doing so is feasible and consistent with the Adaptation's lawful purpose.
-
-### **5. Share-Forward (Share-Alike)**
-
-Adaptations and Derivative Works that are publicly distributed must be released under this License (CCAL v2.1) or a Compatible License as defined in Section 11. The terms of this License — including Attribution, the Care Clause, the Earth-First Constraint, Transparency, Share-Forward, Non-Enclosure, Patent Non-Assertion, and the Grace Provision — must propagate to Adaptations and Derivative Works.
-
-No party may use this License to establish proprietary enclosure over a Derivative Work, nor to restrict downstream Licensees' access to the same Work or its derivatives.
-
-### **6. Non-Enclosure**
-
-No Licensee may take any action — including but not limited to assertion of trademark, patent, contractual lock-in, technical protection measures (DRM), or platform-exclusive distribution — that has the effect of enclosing the Work or its derivatives such that other Licensees cannot exercise the rights granted in this License.
-
-This Condition does not prohibit charging for services (which is expressly permitted under the Grant of Rights), nor does it prohibit the creation of proprietary tools that interface with CCAL-licensed systems (APIs, plugins, integrations). It prohibits enclosure of the underlying Work itself.
-
-### **7. Patent Non-Assertion**
-
-By exercising rights under this License, Licensee agrees:
-
-- Not to assert patent claims against any party using the Work as licensed;
-- To grant a royalty-free, worldwide, non-exclusive patent license to any patents Licensee holds that are necessarily infringed by implementations of the Work, for the purpose of those implementations;
-- To contribute patent improvements that build on the Work back to the commons under this License or a Compatible License.
-
-**Defensive Termination.** If Licensee initiates patent litigation against any party alleging that the Work, or any implementation of the Work, infringes Licensee's patents, then Licensee's rights under this License terminate automatically on the date such litigation is filed.
-
-### **8. Grace Provision**
-
-Good-faith use of the Work, by a Licensee acting in conformity with the Care Clause and the Earth-First Constraint, is shielded from retaliatory enforcement by the Institute. The Grace Protocol's Anti-Retaliation Shield extends to such Licensees.
-
-Good faith is presumed unless a clear pattern of bad-faith conduct is established. A Licensee who has made a reasonable effort to comply, who corrects deficiencies on notice, and whose use is not extractive or harmful, is shielded.
+**"Commercial Use"** means use primarily intended for or directed
+toward commercial advantage or monetary compensation.
 
 ---
 
-## **Disclaimers**
+## SECTION 2 — GRANT OF RIGHTS
 
-### **9. No Warranty**
+Subject to the terms of this license, the Licensor grants the
+Licensee a worldwide, royalty-free, non-exclusive, perpetual license
+to:
 
-The Work is provided "AS IS," without warranty of any kind, express or implied. The Institute and the Author make no representations:
+**2.1** Reproduce and distribute the Work in any medium or format.
 
-- That the Work is fit for any particular purpose;
-- That the Work is free of errors, omissions, or inaccuracies;
-- That implementations of the Work will achieve any specific outcome;
-- That the Work does not infringe any third party's rights (though the Author warrants original authorship to the best of their knowledge);
-- That ongoing support, updates, or maintenance will be provided.
+**2.2** Adapt, remix, transform, and build upon the Work.
 
-The Institute commits in good faith to correct identified errors and to publish updates via its public channels (GitHub, ResearchGate, pCloud, and Zenodo), but no such commitment is enforceable as a warranty.
+**2.3** Use the Work for academic citation, research, educational
+purposes, and open-source software implementation.
 
-### **10. Limitation of Liability**
+**2.4** Charge for services, implementation, or support built around
+the Work — but not for the knowledge itself in isolation.
 
-To the maximum extent permitted by applicable law, neither the Institute nor the Author shall be liable for any direct, indirect, incidental, consequential, special, or exemplary damages arising from the Licensee's use of the Work, regardless of the theory of liability.
-
----
-
-## **Administration**
-
-### **11. Termination and Reinstatement**
-
-A Licensee's rights under this License terminate automatically upon material violation, including:
-
-- Failure to comply with the Attribution requirement (Section 1);
-- Violation of the Care Clause (Section 2);
-- Violation of the Earth-First Constraint (Section 3);
-- Failure of Transparency for publicly distributed Adaptations (Section 4);
-- Breach of Share-Forward (Section 5);
-- Enclosure of the Work or its derivatives (Section 6);
-- Initiation of patent litigation against a Licensee (Section 7);
-- Unauthorized use of the ERES Institute name or marks in a manner suggesting endorsement of a work the Institute has not endorsed.
-
-**Reinstatement.** Where the violation is cured within thirty (30) days of the Licensee receiving notice of the violation, the License is automatically reinstated for that Licensee. A second material violation by the same Licensee may, at the Institute's discretion, result in permanent termination. Intentional, malicious, or extractive violations are not subject to automatic reinstatement.
-
-Termination of one Licensee's rights does not affect the rights of any other Licensee acting in good faith.
-
-### **12. Compatibility**
-
-This License is **compatible** with (i.e., a Derivative Work may be released under) the following licenses, which carry equivalent or stronger commitments to attribution and the commons:
-
-- Creative Commons Attribution 4.0 International (CC-BY 4.0)
-- Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)
-- GNU Free Documentation License (GFDL)
-- Open Publication License
-- Academic Free License v3.0
-- MIT License (for source code components)
-- Apache License 2.0 (for source code components)
-- Open Data Commons Attribution License (ODC-BY) (for datasets)
-- CERN Open Hardware License v2 Strongly Reciprocal (CERN-OHL-S v2) (for hardware schematics)
-
-This License is **incompatible** with (i.e., a Derivative Work may not be released under) the following classes of license:
-
-- Proprietary or closed-source licenses;
-- Licenses permitting digital rights management (DRM) or technical restrictions on the Work;
-- Licenses that grant exclusive rights or permit sublicensing in derogation of CCAL terms;
-- Licenses that prohibit commercial use entirely (CCAL permits commercial use of services and implementations; a license that forbids this is too restrictive to receive a CCAL-licensed input).
-
-For complex deposits combining code, documentation, datasets, and hardware schematics, the layered-component pattern established under ERES-TCL v1.0 is permitted: MIT for code, CC-BY-SA 4.0 for documentation, ODC-BY for datasets, CERN-OHL-S v2 for hardware schematics — all unified under the CCAL v2.1 framework as the umbrella License Steward.
-
-### **13. Governance and Stewardship**
-
-**License Steward.** The ERES Institute for New Age Cybernetics is the License Steward, with sole authority to issue authoritative interpretations of this License and to publish successor versions.
-
-**Version Updates.** Proposals for amendments to CCAL may be submitted to the Steward by any Licensee or member of the public. Adoption of a new version requires supermajority consensus of the Institute's standing review process (sixty-seven percent, 67%). Backward compatibility with prior versions is maintained where consistent with the Three Governing Principles. Prior versions of CCAL remain valid licenses for Works originally released under those versions.
-
-**Canonical Text.** The canonical text of CCAL v2.1 is deposited at Zenodo with its own Digital Object Identifier (DOI) and mirrored at the ERES Institute GitHub organization (`https://github.com/ERES-Institute-for-New-Age-Cybernetics`). In the event of discrepancy between mirrors, the Zenodo deposit governs.
-
-### **14. Dispute Resolution**
-
-Disputes arising under this License shall be resolved in the following sequence, with each stage to be exhausted before progressing to the next:
-
-1. **Good-faith dialogue** (thirty days). Direct communication between the disputing parties, with the Institute available as a neutral consultant on questions of CCAL interpretation.
-2. **Community mediation** (sixty days). Mediation conducted under the auspices of the Institute or a mutually agreed mediator drawn from the CCAL Licensee community.
-3. **Arbitration.** Binding arbitration by a mutually agreed expert panel, conducted on principles consistent with the Three Governing Principles and the Care Clause.
-
-Litigation is the last resort. Any party who initiates litigation in violation of this sequence forfeits the Grace Provision (Section 8) with respect to the dispute in question.
-
-### **15. Severability and Construction**
-
-If any provision of this License is held to be unenforceable under applicable law, the remaining provisions shall continue in full force and effect. Where a provision can be partially enforced, it shall be partially enforced to the maximum extent permitted.
-
-This License shall be construed in accordance with its plain meaning and with the manifest intent of the Three Governing Principles. In any case of ambiguity, the construction more consistent with the Care Clause and the Earth-First Constraint shall prevail.
+**2.5** Create proprietary tools that interface with CCAL-licensed
+systems (APIs, plugins, wrappers), provided the CCAL-licensed
+components remain openly licensed.
 
 ---
 
-## **Effective Date and Lineage**
+## SECTION 3 — ATTRIBUTION (REQUIRED)
 
-This License (CCAL v2.1) became effective on **April 26, 2026**.
+**3.1 Required Attribution Format**
 
-**Version Lineage:**
+All use, reproduction, adaptation, or citation of any Work must
+include the following attribution in a form reasonably prominent
+given the medium:
 
-| Version | Effective Date | Key Additions |
-| :---- | :---- | :---- |
-| CCAL v1.0 | February 2012 | Initial release: attribution, transparency, share-alike, no-warranty |
-| CCAL v2.0 | 2024 | Care Clause introduced; alignment with the Three Governing Principles formalized |
-| CCAL v2.1 | April 26, 2026 | Earth-First Constraint, Grace Provision, Patent Non-Assertion with Defensive Termination, formal compatibility table, layered-component pattern (ERES-TCL v1.0), Zenodo canonical deposit |
+```
+Original Framework: Joseph Allen Sprute
+ERES Institute for New Age Cybernetics (est. February 2012)
+ORCID: 0000-0001-9946-3221
+License: CARE Commons Attribution License v2.1 (CCAL)
+Source: github.com/ERES-Institute-for-New-Age-Cybernetics
+DOI: 10.5281/zenodo.20010116
+```
+
+**3.2 MIEVM Output Attribution**
+
+For any Work produced through MIEVM ensemble validation, attribution
+must identify Joseph Allen Sprute as Framework Originator and may
+identify AI instruments as synthesis contributors under their
+respective organizational affiliations. AI instruments are not authors
+in the legal sense; they are synthesis instruments within the H2C2H
+methodology.
+
+**3.3 Continuity of Attribution**
+
+Attribution must be preserved intact across all derivative works,
+including translations, adaptations, and downstream composite
+instruments. Removal or obscuring of attribution triggers automatic
+license termination under Section 7.
 
 ---
 
-## **Suggested Citation for Works under CCAL v2.1**
+## SECTION 4 — TRANSPARENCY
 
-> Sprute, J. A. (Year). *Title of Work.* ERES Institute for New Age Cybernetics. Licensed under CCAL v2.1. ORCID: 0000-0001-9946-3221. [DOI or URL]
+**4.1** Derivative Works must be released as open-source under terms
+no more restrictive than CCAL v2.1 or a compatible license (see
+Section 9 — Compatibility).
 
-## **Suggested Citation for the License Itself**
+**4.2** Modifications must be clearly marked and documented. Changed
+material must be identified as distinct from the original Work.
 
-> Sprute, J. A. (2026). *CARE Commons Attribution License v2.1 (CCAL v2.1).* ERES Institute for New Age Cybernetics. Effective April 26, 2026. [Zenodo DOI to be assigned upon deposit]
-
----
-
-## **Closing**
-
-CCAL v2.1 is one instrument among many. It is offered in good faith, to be used in good faith, in service of work that may outlast all of us. Read it once. Then build.
-
-*"Don't hurt yourself. Don't hurt others. Build for generations to come."*
+**4.3** Source materials underlying any Derivative Work must be made
+publicly available.
 
 ---
 
-**End of CCAL v2.1**
-Steward: ERES Institute for New Age Cybernetics
+## SECTION 5 — SHARE-ALIKE
+
+**5.1** If you remix, transform, or build upon the Work, you must
+distribute your contributions under CCAL v2.1 or a compatible
+license.
+
+**5.2** You may not apply legal terms or technological measures
+(including DRM) that restrict others from exercising the rights
+granted under this license.
+
+---
+
+## SECTION 6 — PATENT NON-ASSERTION
+
+**6.1 Patent Peace**
+
+By using this Work, you agree not to assert patent claims against
+any party using this Work as licensed, and to grant royalty-free
+patent licenses for implementations of the frameworks herein.
+
+**6.2 Patent-Pending Components**
+
+The following components are subject to intellectual property
+protection and require direct licensing consultation with the ERES
+Institute: DTBL, IDIPITIS four-layer architecture, Talonics RAW
+System, GSSG material specifications, and SCC hardware protocol.
+
 Contact: eresmaestro@gmail.com
-Canonical mirror: `https://github.com/ERES-Institute-for-New-Age-Cybernetics`
+
+**6.3 Defensive Termination**
+
+If you initiate patent litigation against any party alleging
+infringement through use of this Work, your license terminates
+automatically and immediately.
+
+---
+
+## SECTION 7 — PROHIBITED USES
+
+The following uses are prohibited under CCAL v2.1:
+
+**7.1** Closed-source commercial products incorporating the Work
+without a separate partnership agreement with the ERES Institute.
+
+**7.2** Rent-seeking behavior — value extraction from the Work
+without proportional contribution back to the commons.
+
+**7.3** Any use that violates the Three Governing Principles:
+causing harm to self, others, or future generations.
+
+**7.4** Unauthorized use of the ERES Institute name, Joseph Allen
+Sprute's name, or ERES corpus instrument identifiers in a manner
+that implies endorsement without consent.
+
+---
+
+## SECTION 8 — NO WARRANTY
+
+This Work is provided "AS IS" without warranty of any kind, express
+or implied, including but not limited to fitness for a particular
+purpose. The Licensor assumes no liability for damages arising from
+use or misuse. Errors and omissions are corrected when identified
+via GitHub version control.
+
+---
+
+## SECTION 9 — TERMINATION
+
+**9.1** Your rights under this license terminate automatically upon:
+failure to comply with attribution requirements; use for prohibited
+purposes; assertion of patent claims against licensees; or sublicensing
+in violation of these terms.
+
+**9.2 Reinstatement:** Automatic reinstatement occurs 30 days after
+the violation ceases. Permanent termination applies after a second
+violation. No reinstatement for intentional or malicious violations.
+
+---
+
+## SECTION 10 — GOVERNANCE OF THIS LICENSE
+
+**License Steward:** ERES Institute for New Age Cybernetics
+
+**Version Updates:** Community proposals welcomed. Changes require
+supermajority consensus (67%). Backward compatibility maintained
+where possible. Prior versions remain valid for existing
+implementations.
+
+**Dispute Resolution:**
+1. Good-faith dialogue (30 days)
+2. Community mediation (60 days)
+3. Arbitration by mutually agreed expert panel
+
+---
+
+## SECTION 11 — LAYERED COMPONENT STRUCTURE
+
+CCAL v2.1 governs the corpus as a whole. Component-level licenses
+apply within that governing frame as follows:
+
+| Component Type | Component License | Governing Frame |
+|---|---|---|
+| Codebase (PlayNAC KERNEL, Talonics SDK) | MIT License | CCAL v2.1 |
+| Documentation and white papers | CC BY-SA 4.0 | CCAL v2.1 |
+| Datasets and ontologies | ODC-BY | CCAL v2.1 |
+| Hardware schematics | CERN-OHL-S v2 | CCAL v2.1 |
+| MIEVM ensemble outputs | CCAL v2.1 direct | CCAL v2.1 |
+
+In any conflict between a component-level license and CCAL v2.1,
+CCAL v2.1 governs.
+
+---
+
+## SECTION 12 — LICENSE COMPATIBILITY
+
+**Compatible licenses (can combine or remix with CCAL):**
+- Creative Commons BY-SA 4.0
+- GNU Free Documentation License
+- Open Publication License
+- Academic Free License
+
+**Incompatible licenses:**
+- Proprietary or closed-source licenses
+- Licenses permitting DRM or technical restrictions
+- Licenses allowing sub-licensing or exclusive rights
+- Non-commercial-only licenses (CCAL permits commercial use
+  if non-exploitative, per Section 2.4)
+
+---
+
+---
+
+# EXPLANATORY NOTE: CCAL v2.1 AND CC-BY-4.0
+## How They Work Together
+
+This note explains the relationship between CCAL v2.1 and Creative
+Commons Attribution 4.0 International (CC-BY-4.0) for the benefit
+of archives, repositories, institutions, and reuse tooling that
+require a recognized SPDX license identifier.
+
+---
+
+### Why Two Licenses?
+
+**CC-BY-4.0** is a globally recognized, legally robust open license
+maintained by Creative Commons. It is supported natively by Zenodo,
+ResearchGate, ORCID, and virtually all academic repositories. It
+requires attribution and permits broad reuse including commercial use.
+It does not include share-alike, patent non-assertion, or
+corpus-specific provisions.
+
+**CCAL v2.1** is the operative governing license for the ERES corpus.
+It extends CC-BY-4.0 with provisions that CC-BY-4.0 alone does not
+provide: share-alike requirements for derivative works, patent
+non-assertion, explicit prohibition of rent-seeking extraction,
+Three Governing Principles alignment, continuity of attribution
+across MIEVM ensemble outputs, and the layered component structure
+that governs codebase, documentation, and hardware schematics
+differently within one unified frame.
+
+---
+
+### How They Interact
+
+For this Zenodo deposit and all ERES corpus instruments:
+
+**CC-BY-4.0 is the standardized SPDX proxy.** It is listed in the
+Zenodo license dropdown to satisfy repository metadata requirements.
+It accurately represents the minimum reuse floor: attribution
+required, broad reuse permitted.
+
+**CCAL v2.1 is the operative license.** It governs all actual reuse,
+adaptation, and distribution. CCAL v2.1 is more protective than
+CC-BY-4.0 in the directions listed above. Where CC-BY-4.0 and
+CCAL v2.1 overlap, the terms are equivalent. Where CCAL v2.1 adds
+requirements CC-BY-4.0 does not contain, those additional
+requirements apply.
+
+**In plain terms:** CC-BY-4.0 tells a repository what kind of
+license this is. CCAL v2.1 tells a human reuser what the actual
+terms are. Any party relying only on CC-BY-4.0 for reuse
+authorization without reading CCAL v2.1 is relying on an incomplete
+picture of their obligations.
+
+---
+
+### What This Means for Reusers
+
+| Scenario | CC-BY-4.0 alone sufficient? | CCAL v2.1 adds... |
+|---|---|---|
+| Cite the work in a paper | Yes | Nothing additional |
+| Reproduce a passage with attribution | Yes | Nothing additional |
+| Adapt and redistribute openly | Partially | Share-alike requirement |
+| Create a commercial product | Partially | Non-exploitation clause |
+| Implement in software | Partially | Patent non-assertion |
+| Build MIEVM-validated derivative | No | Attribution continuity rules |
+| Use ERES Institute name | No | Consent required |
+
+---
+
+### Recommended Citation of License
+
+```
+License: CARE Commons Attribution License v2.1 (CCAL)
+Compatible with: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+License text: [LICENSE.md in this deposit]
+DOI: 10.5281/zenodo.20010116
+```
+
+---
+
+### For Zenodo Custom License Field
+
+When submitting ERES corpus instruments to Zenodo, use:
+
+**License dropdown:** CC-BY-4.0 (standardized SPDX proxy)
+
+**Custom License — Title:**
+```
+CARE Commons Attribution License v2.1 (CCAL)
+```
+
+**Custom License — Description:**
+```
+The CARE Commons Attribution License v2.1 (CCAL) is the operative
+governing license for the ERES Institute corpus. It is functionally
+compatible with CC-BY-4.0 in attribution requirements and adds
+share-alike, patent non-assertion, Three Governing Principles
+alignment, and continuity of attribution across ensemble-validated
+outputs. Full text in LICENSE.md in this deposit.
+```
+
+**Custom License — Link:**
+```
+https://github.com/ERES-Institute-for-New-Age-Cybernetics
+```
+*(Update to direct LICENSE.md URL when available)*
+
+---
+
+*CARE Commons Attribution License v2.1 (CCAL)*
+*ERES Institute for New Age Cybernetics*
+*Bella Vista, Arkansas · est. February 2012*
+*License Steward: Joseph Allen Sprute*
+*ORCID: 0000-0001-9946-3221*
+*US=CREATOR*
