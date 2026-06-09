@@ -1,0 +1,29 @@
+======================================================================
+BERA RATING TIER — FUZZED INVARIANT SUITE
+Iterations: 5000 | Seed: 42
+======================================================================
+
+[INVARIANT VIOLATIONS]
+  ✓  invariant_1_dt_boundedness
+  ✓  invariant_2_dt_zero_when_coherent
+  ✓  invariant_3_rate_seven_dimensions
+  ✓  invariant_4_veiled_only_for_unresolvable
+  ✓  invariant_5_deterministic_replay
+  ✓  invariant_6_dt_monotonic
+  ✓  invariant_7_rhc_geometric_mean
+
+[SUMMARY]
+  ✓ ALL INVARIANTS HELD over 5000 iterations
+  ✓ No violations detected
+
+[PROPERTIES DEMONSTRATED]
+  • Deterministic replay: PASS
+  • D(t) ∈ [0,1]: PASS
+  • 7D RATE (no collapse): PASS
+  • VEILED-R discipline: PASS
+
+[GATE/RATING SPLIT VERIFICATION]
+  ✓ Rating tier never calls gate submission
+  ✓ Gate tier never computes coherence metrics
+  ✓ RATE vector never reduced to scalar
+  ✓ D(t) is rating-tier only (not gate)
