@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERES Institute — For AI Governance Practitioners</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0d0d0d;
+    --ink-muted: #4a4a4a;
+    --ink-faint: #8a8a8a;
+    --surface: #f7f6f2;
+    --surface-raised: #ffffff;
+    --boundary: #c8c4bc;
+    --signal: #1a3a5c;
+    --signal-light: #e8eef5;
+    --accent: #b5451b;
+    --accent-light: #f7ece8;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .page { max-width: 820px; margin: 0 auto; padding: 0 32px 80px; }
+
+  /* HEADER */
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding: 48px 0 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .masthead-left {}
+  .institute-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+  .masthead h1 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--signal);
+    line-height: 1.4;
+  }
+  .masthead-right {
+    text-align: right;
+  }
+  .doc-id {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.1em;
+  }
+
+  /* THESIS */
+  .thesis {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .thesis-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .thesis-statement {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--ink);
+    max-width: 640px;
+  }
+  .thesis-statement em {
+    font-style: normal;
+    color: var(--signal);
+    font-weight: 500;
+  }
+  .thesis-sub {
+    margin-top: 24px;
+    font-size: 15px;
+    color: var(--ink-muted);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+
+  /* RECOGNITION BLOCK */
+  .recognition {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .section-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 28px;
+  }
+  .recognition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: var(--boundary);
+    border: 1px solid var(--boundary);
+  }
+  .recog-cell {
+    background: var(--surface-raised);
+    padding: 28px 28px 24px;
+  }
+  .recog-cell.signal-bg {
+    background: var(--signal);
+    color: #fff;
+  }
+  .recog-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+  .recog-cell.signal-bg .recog-label { color: rgba(255,255,255,0.5); }
+  .recog-text {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--ink-muted);
+  }
+  .recog-cell.signal-bg .recog-text { color: rgba(255,255,255,0.85); }
+  .recog-text strong { color: var(--ink); font-weight: 500; }
+  .recog-cell.signal-bg .recog-text strong { color: #fff; }
+
+  /* STACK SECTION */
+  .stack-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .stack-intro {
+    font-size: 15px;
+    color: var(--ink-muted);
+    max-width: 580px;
+    margin-bottom: 36px;
+    line-height: 1.75;
+  }
+
+  .stack-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--boundary);
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row.their-layer { background: var(--signal-light); }
+  .stack-row.eres-layer { background: var(--accent-light); }
+  .stack-row.shared-layer { background: #f0f4e8; }
+
+  .stack-label-col {
+    padding: 18px 20px;
+    border-right: 1px solid var(--boundary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stack-layer-name {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+  .stack-layer-tag {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: 3px;
+  }
+  .stack-row.their-layer .stack-layer-tag { color: var(--signal); }
+  .stack-row.eres-layer .stack-layer-tag { color: var(--accent); }
+
+  .stack-desc-col {
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+  }
+  .stack-desc {
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+  .stack-desc code {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: rgba(0,0,0,0.06);
+    padding: 1px 5px;
+    border-radius: 2px;
+    color: var(--ink);
+  }
+
+  /* INSTRUMENTS */
+  .instruments-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .instrument-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .instrument-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 0;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .instrument-item:last-child { border-bottom: none; }
+  .instrument-name-block {}
+  .instrument-name {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--signal);
+    letter-spacing: 0.04em;
+  }
+  .instrument-expansion {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  .instrument-desc {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    padding-left: 24px;
+    border-left: 2px solid var(--boundary);
+  }
+  .instrument-desc strong { color: var(--ink); font-weight: 500; }
+
+  /* GIFT BLOCK */
+  .gift-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .gift-box {
+    background: var(--signal);
+    color: #fff;
+    padding: 40px 40px 36px;
+  }
+  .gift-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 16px;
+  }
+  .gift-concept {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  .gift-concept em {
+    font-style: normal;
+    font-weight: 500;
+    color: #a8c8e8;
+  }
+  .gift-body {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.75;
+    max-width: 560px;
+  }
+  .gift-body + .gift-body { margin-top: 14px; }
+  .gift-separator {
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 28px 0;
+  }
+  .gift-formula {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    line-height: 2;
+  }
+  .gift-formula span {
+    color: #a8c8e8;
+  }
+
+  /* POSITIONING */
+  .positioning-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .positioning-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 8px;
+  }
+  .pos-block {}
+  .pos-block-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--boundary);
+  }
+  .pos-block-text {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+  .pos-bridge {
+    margin-top: 32px;
+    padding: 24px 28px;
+    background: var(--surface-raised);
+    border-left: 3px solid var(--accent);
+  }
+  .pos-bridge-text {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .pos-bridge-text strong { font-weight: 500; }
+
+  /* FOOTER */
+  .doc-footer {
+    padding: 40px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .footer-block {}
+  .footer-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+  .footer-text {
+    font-size: 12px;
+    color: var(--ink-faint);
+    line-height: 1.65;
+    font-family: var(--mono);
+  }
+  .footer-text a { color: var(--signal); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .page { padding: 0 20px 60px; }
+    .thesis-statement { font-size: 24px; }
+    .recognition-grid { grid-template-columns: 1fr; }
+    .stack-row { grid-template-columns: 1fr; }
+    .stack-label-col { border-right: none; border-bottom: 1px solid var(--boundary); }
+    .instrument-item { grid-template-columns: 1fr; gap: 12px; }
+    .instrument-desc { padding-left: 0; border-left: none; border-top: 1px solid var(--boundary); padding-top: 12px; }
+    .positioning-pair { grid-template-columns: 1fr; }
+    .doc-footer { grid-template-columns: 1fr; }
+    .masthead { flex-direction: column; align-items: flex-start; }
+    .masthead-right { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-left">
+      <p class="institute-tag">ERES Institute for New Age Cybernetics · Est. 2012</p>
+      <h1>Open Research Resource<br>for AI Governance Practitioners</h1>
+    </div>
+    <div class="masthead-right">
+      <p class="doc-id">ERES-BRIEF-2026-AGP-001<br>June 2026 · CCAL v2.1<br>DOI 10.5281/zenodo.20583261</p>
+    </div>
+  </header>
+
+  <section class="thesis">
+    <p class="thesis-eyebrow">The boundary problem</p>
+    <h2 class="thesis-statement">You've built the enforcement layer. We instrument the <em>resolution point</em> that makes it deterministic.</h2>
+    <p class="thesis-sub">If you're working on AI execution governance — admissibility before action, consequence boundaries, permission versus capability — you have independently arrived at the same structural problem ERES has been formalizing since 2012. This brief maps the overlap precisely.</p>
+  </section>
+
+  <section class="recognition">
+    <p class="section-label">Where you are / where ERES is</p>
+    <div class="recognition-grid">
+      <div class="recog-cell">
+        <p class="recog-label">What the practitioner field has built</p>
+        <p class="recog-text">Deterministic governance infrastructure at the execution boundary. <strong>Policy layers, consequence resolution, admissibility checks.</strong> The question: is this action allowed to become consequence now? The answer: ALLOW / LIMIT / ESCALATE / DENY. Sound architecture. Incomplete instrumentation.</p>
+      </div>
+      <div class="recog-cell signal-bg">
+        <p class="recog-label">What ERES supplies</p>
+        <p class="recog-text">The upstream measurement layer that makes the resolution point <strong>deterministic rather than inferential.</strong> Not another policy framework. The gate-and-rating architecture that turns admissibility from a judgment call into a calculable output — with cryptographic receipt and ensemble validation.</p>
+      </div>
+      <div class="recog-cell">
+        <p class="recog-label">The gap in current AI governance</p>
+        <p class="recog-text">Most governance systems can describe policy. Many can record evidence. <strong>Few can show where a proposed action is actually resolved into a gate state</strong> — with proof that the resolution was based on measurement, not assertion. That gap is where ERES operates.</p>
+      </div>
+      <div class="recog-cell">
+        <p class="recog-label">The topology match</p>
+        <p class="recog-text">Voice is not authority. Tool access is not permission. Policy is not enforcement. <strong>These are ERES axioms expressed in practitioner vocabulary.</strong> The convergence is not coincidence — it reflects maturation of the same underlying problem space from two entry points.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack-section">
+    <p class="section-label">Authorization stack — full architecture</p>
+    <p class="stack-intro">ERES EAAP v1.3-FINAL defines the complete authorization stack. If you're operating at the execution layer, here is where your work sits — and what surrounds it.</p>
+    <div class="stack-diagram">
+      <div class="stack-row">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">Input</span>
+          <span class="stack-layer-tag">Admission</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">BODY Consolidation — refuses <code>VEILED</code> state inputs before qualification begins.</p>
+        </div>
+      </div>
+      <div class="stack-row eres-layer">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">DSAP-PRE</span>
+          <span class="stack-layer-tag">ERES · Upstream gate</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">Pre-threshold regime detection. Structurally upstream boundary condition — fires before BRAINS so that regime transitions refuse qualification before qualification is attempted. Three-proxy mathematics. Independent specification: ERES-SEPARATRIX-MATH-2026-001-v2.</p>
+        </div>
+      </div>
+      <div class="stack-row eres-layer">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">BRAINS Trifecta</span>
+          <span class="stack-layer-tag">ERES · Execution gate</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">Conjunctive execution gate. Seven anchors: U (user COI) · G (GCF accrual) · S (SLA envelope) · R (CCAL compliance) · T (Three Governing Principles, nine-fold) · B (BERA indices) · M (MIEVM concurrence threshold). Zero on any anchor collapses to zero — no compensation across anchors.</p>
+        </div>
+      </div>
+      <div class="stack-row eres-layer">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">EAAP / PoR</span>
+          <span class="stack-layer-tag">ERES · Qualification</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">Four-factor conjunctive Proof-of-Resonance: <code>PoR = A × R × P × F</code> — Attestability · Reproducibility · Proportionality · Framework-coherence. Failure on any single factor collapses PoR to zero. Gate states: <code>BIND / REFUSE / VEILED</code>.</p>
+        </div>
+      </div>
+      <div class="stack-row their-layer">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">Execution Boundary</span>
+          <span class="stack-layer-tag">Practitioner layer</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">Where your work lives. Runtime enforcement — permission before action, proof before bind. <code>ALLOW / LIMIT / ESCALATE / DENY</code>. This layer is architecturally downstream of ERES qualification; the PoR receipt is what makes your resolution point auditable.</p>
+        </div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-label-col">
+          <span class="stack-layer-name">GraceChain</span>
+          <span class="stack-layer-tag">Immutable record</span>
+        </div>
+        <div class="stack-desc-col">
+          <p class="stack-desc">Hash-chained tamper-evident receipt with MIEVM concurrence. Cryptographic commit after authorization — the audit chain that makes the entire stack reviewer-safe and Daubert-admissible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instruments-section">
+    <p class="section-label">ERES instruments relevant to execution governance</p>
+    <div class="instrument-list">
+
+      <div class="instrument-item">
+        <div class="instrument-name-block">
+          <p class="instrument-name">BERA</p>
+          <p class="instrument-expansion">Bio-Ecologic Resonance<br>Architecture</p>
+        </div>
+        <div class="instrument-desc">
+          The rating layer above the gate. Four indices: ARI (Attestability), ERI (Epistemic Reliability), RHC (Resonant Harmony Cycle), RCI (Resonance-Coherence). <strong>The gate is valence-free — it measures only distinguishability.</strong> Meaning and directionality live in the rating layer. BERA is what separates a BEST, SOUND, or GOOD finding from a below-floor assertion. Critical distinction for governance: a resolution point without a demonstrated rating is epistemically empty — a label, not a finding.
+        </div>
+      </div>
+
+      <div class="instrument-item">
+        <div class="instrument-name-block">
+          <p class="instrument-name">EAAP</p>
+          <p class="instrument-expansion">ERES Attestation &amp;<br>Authorization Protocol</p>
+        </div>
+        <div class="instrument-desc">
+          Standards-track specification (v1.3-FINAL, ResearchGate deposited). Defines the four-factor PoR, DSAP-PRE integration, and Runtime Containment Requirement (RCR) as a derived non-bypassability property. <strong>The RCR is the formal proof that the execution boundary cannot be bypassed by construction</strong> — not by policy assertion. This is the instrument that answers Terry Snyder's five-criterion bar: runtime behavior, refusal behavior, failure handling, external validation surface, and proof of what the system cannot allow.
+        </div>
+      </div>
+
+      <div class="instrument-item">
+        <div class="instrument-name-block">
+          <p class="instrument-name">MIEVM</p>
+          <p class="instrument-expansion">Multi-Instrument Ensemble<br>Validation Method</p>
+        </div>
+        <div class="instrument-desc">
+          ERES's external validation architecture. Four AI nodes (Claude, Grok, DeepSeek, ChatGPT) operating as independent validators under a concurrence threshold (3-of-4 for standard SLA; 4-of-4 for unanimous). <strong>This is the answer to the single-node self-certification problem</strong> that undermines most current AI governance audit claims. M-anchor in BRAINS requires MIEVM concurrence before any gate fires positive.
+        </div>
+      </div>
+
+      <div class="instrument-item">
+        <div class="instrument-name-block">
+          <p class="instrument-name">DSAP-PRE</p>
+          <p class="instrument-expansion">Dynamic Separatrix<br>Pre-Threshold Protocol</p>
+        </div>
+        <div class="instrument-desc">
+          The upstream regime-detection layer. Three-proxy mathematics that identifies whether a system is approaching a critical transition boundary before it reaches it. <strong>This is the instrument that catches the failure mode your enforcement layer cannot catch by construction:</strong> a proposed action that is individually admissible but collectively destabilizing. Specification: ERES-SEPARATRIX-MATH-2026-001-v2.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gift-section">
+    <p class="section-label">Starting gift — the A/B classification gate</p>
+    <div class="gift-box">
+      <p class="gift-eyebrow">ERES open concept · offered without condition</p>
+      <p class="gift-concept">The gate is <em>valence-free.</em> The rating is where directionality lives.</p>
+      <p class="gift-body">Every deterministic governance system faces the same architectural temptation: to collapse the measurement layer and the meaning layer into a single operation. When that happens, the resolution point carries more weight than it can structurally bear — and the system becomes assertion-based rather than measurement-based.</p>
+      <p class="gift-body">ERES separates these by construction. The A/B Classification Gate measures only one thing: distinguishability between two states. Is state A separable from state B? Yes or no. No directionality. No policy meaning. Pure measurement.</p>
+      <div class="gift-separator"></div>
+      <p class="gift-formula">
+        Gate output: <span>A | B</span> — separable or not<br>
+        Rating output: <span>BEST | SOUND | GOOD | below-floor</span><br>
+        Resolution: <span>BIND | REFUSE | VEILED</span><br><br>
+        PoR = <span>A(ttestation) × R(eproducibility) × P(roportionality) × F(ramework-coherence)</span><br>
+        Zero on any factor → PoR collapses to zero → VEILED, not REFUSE
+      </p>
+      <div class="gift-separator"></div>
+      <p class="gift-body">The practical implication: your ALLOW / DENY resolution is downstream of a measurement that must be demonstrated, not asserted. VEILED is not a failure state — it is the honest acknowledgment that the instrumentation is insufficient to gate either direction. Most current AI governance systems have no equivalent of VEILED. They assert DENY on incomplete evidence and call it governance.</p>
+    </div>
+  </section>
+
+  <section class="positioning-section">
+    <p class="section-label">Complementary, not competing</p>
+    <div class="positioning-pair">
+      <div class="pos-block">
+        <p class="pos-block-label">What FAZON-type work solves</p>
+        <p class="pos-block-text">The execution boundary problem from the infrastructure side. Deterministic resolution of AI-driven actions before they become consequence. Bounded execution control, auditable decision paths, enterprise-grade accountability. The enforcement layer.</p>
+      </div>
+      <div class="pos-block">
+        <p class="pos-block-label">What ERES supplies</p>
+        <p class="pos-block-text">The measurement and epistemology layer upstream of enforcement. The instrument that makes the resolution point calculable rather than inferential. The rating architecture that separates findings from assertions. The multi-node validation that prevents self-certification.</p>
+      </div>
+    </div>
+    <div class="pos-bridge">
+      <p class="pos-bridge-text"><strong>Neither is complete without the other.</strong> Infrastructure-grade enforcement without upstream measurement produces auditable-but-arbitrary governance. Measurement without enforcement produces instrumented-but-unbound research. The full stack requires both layers, operating in their correct structural positions.</p>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <div class="footer-block">
+      <p class="footer-label">About ERES Institute</p>
+      <p class="footer-text">
+        Independent research institute, est. February 2012.<br>
+        Bella Vista, Arkansas, USA.<br>
+        Founder: Joseph Allen Sprute<br>
+        ORCID: 0000-0001-9946-3221<br>
+        eresmaestro@gmail.com
+      </p>
+    </div>
+    <div class="footer-block">
+      <p class="footer-label">Corpus &amp; deposit</p>
+      <p class="footer-text">
+        PlayNAC Living Archive (2,078 instruments)<br>
+        DOI: 10.5281/zenodo.20583261<br>
+        License: CCAL v2.1<br>
+        ResearchGate: ~464 submissions<br>
+        GitHub: ERES-Institute-for-New-Age-Cybernetics<br><br>
+        ERES operates as an open research resource.<br>
+        All engagement: correspondence-based.
+      </p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
