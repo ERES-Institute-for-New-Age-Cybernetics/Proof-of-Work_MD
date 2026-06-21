@@ -1,0 +1,68 @@
+<svg width="1200" height="482" viewBox="0 0 1200 482" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>ERES Three Clocks telemetry dashboard</title>
+<desc>Digital telemetry dashboard showing three clocks: Clock 1, the sovereign clock, active and running; Clock 2, the tetra clock, paused and latent; Clock 3, the gaia clock, open and unset.</desc>
+<defs>
+<clipPath id="card"><rect x="0" y="0" width="1200" height="482" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect x="0" y="0" width="1200" height="482" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="56" fill="#F4F2EA"/>
+<rect x="0" y="436" width="1200" height="46" fill="#F4F2EA"/>
+<line x1="0" y1="56" x2="1200" y2="56" stroke="#DEDCD0" stroke-width="1"/>
+<line x1="0" y1="436" x2="1200" y2="436" stroke="#DEDCD0" stroke-width="1"/>
+<line x1="400" y1="56" x2="400" y2="436" stroke="#E5E3D8" stroke-width="1"/>
+<line x1="800" y1="56" x2="800" y2="436" stroke="#E5E3D8" stroke-width="1"/>
+
+<text x="28" y="34" font-family="Menlo, Consolas, monospace" font-size="17" letter-spacing="0.3" fill="#6B6A63">ERES Institute for New Age Cybernetics // digital telemetry dashboard // canon metadata</text>
+
+<!-- Clock 1 -->
+<circle cx="44" cy="100" r="10" fill="none" stroke="#B4790F" stroke-width="1.6"/>
+<line x1="44" y1="100" x2="44" y2="94" stroke="#B4790F" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="44" y1="100" x2="49" y2="98" stroke="#B4790F" stroke-width="1.6" stroke-linecap="round"/>
+<text x="66" y="106" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1B">Clock 1</text>
+<text x="32" y="140" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">The sovereign clock</text>
+<rect x="32" y="156" width="72" height="26" rx="13" fill="#FBE9CF"/>
+<text x="46" y="174" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#8A5A12">Active</text>
+<text x="32" y="232" font-family="Menlo, Consolas, monospace" font-size="29" font-weight="500" letter-spacing="0.5" fill="#B4790F">0001:00:00:00</text>
+<text x="32" y="266" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">Running</text>
+<line x1="32" y1="286" x2="368" y2="286" stroke="#E5E3D8" stroke-width="1"/>
+<text font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6B6A63">
+<tspan x="32" y="316">One person holds the pen to</tspan>
+<tspan x="32" y="342">prove the architecture can bear</tspan>
+<tspan x="32" y="368">weight.</tspan>
+</text>
+
+<!-- Clock 2 -->
+<polygon points="444,90 435,109 453,109" fill="none" stroke="#5F5E58" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="466" y="106" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1B">Clock 2</text>
+<text x="432" y="140" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">The tetra clock</text>
+<rect x="432" y="156" width="78" height="26" rx="13" fill="#ECEAE2"/>
+<text x="446" y="174" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#5F5E58">Paused</text>
+<text x="432" y="232" font-family="Menlo, Consolas, monospace" font-size="29" font-weight="500" letter-spacing="0.5" fill="#5F5E58">0000:00:00:00</text>
+<text x="432" y="266" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">Latent</text>
+<line x1="432" y1="286" x2="768" y2="286" stroke="#E5E3D8" stroke-width="1"/>
+<text font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6B6A63">
+<tspan x="432" y="316">Awaiting first institutional</tspan>
+<tspan x="432" y="342">engagement; mapping onto a</tspan>
+<tspan x="432" y="368">thousand-year horizon.</tspan>
+</text>
+
+<!-- Clock 3 -->
+<path d="M 834,100 C 834,94 841,94 844,100 C 847,106 854,106 854,100 C 854,94 847,94 844,100 C 841,106 834,106 834,100 Z" fill="none" stroke="#2563AC" stroke-width="1.6" stroke-linecap="round"/>
+<text x="866" y="106" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#1F1E1B">Clock 3</text>
+<text x="832" y="140" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">The gaia clock</text>
+<rect x="832" y="156" width="58" height="26" rx="13" fill="#DCE8FB"/>
+<text x="846" y="174" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#1D5FA8">Open</text>
+<text x="832" y="232" font-family="Menlo, Consolas, monospace" font-size="29" font-weight="500" letter-spacing="0.5" fill="#2563AC">0000:00:00:00</text>
+<text x="832" y="266" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B6A63">Unset</text>
+<line x1="832" y1="286" x2="1168" y2="286" stroke="#E5E3D8" stroke-width="1"/>
+<text font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6B6A63">
+<tspan x="832" y="316">Awaiting first sovereign</tspan>
+<tspan x="832" y="342">ratification; validation authority</tspan>
+<tspan x="832" y="368">undetermined.</tspan>
+</text>
+
+<text x="600" y="463" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="16" letter-spacing="0.3" fill="#6B6A63">MIEVM ensemble reviewed // protocol active // CCAL v2.1 // deposited via Zenodo archive</text>
+</g>
+<rect x="0.75" y="0.75" width="1198.5" height="480.5" rx="16" fill="none" stroke="#DEDCD0" stroke-width="1.5"/>
+</svg>
