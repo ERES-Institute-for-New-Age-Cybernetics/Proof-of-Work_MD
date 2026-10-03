@@ -1,0 +1,485 @@
+============================================================
+OSF PREREGISTRATION — v3.0 (v2.0 + Credits, References, License)
+============================================================
+
+TITLE
+Operational Validation of HOW ≡ ROOT-HPE (ERES Def-Rel v1.0):
+A Three-Arm Randomized Trial of Endogenous Elevation
+
+DESCRIPTION
+This study tests whether HOW, defined as the root method of
+Human-Performance-Enhancement, is empirically observable under
+strict operational definitions. HOW is declared operating (H = 1)
+in a test session when a participant's momentary elevation
+composite E(t) stays at or above their own baseline ("mediocrity")
+threshold at every in-window probe of a fixed 30-minute window,
+under a documented zero-external-input protocol (X = 0), with
+Purist Form fidelity ≥ .80 and certification by a blind
+Center-of-Excellence (CoE) panel reading a physiology-only
+stress-to-color (S2C) trace. This is a falsifiable specification;
+it does not assume the framework is true. Outcomes are classified
+in advance as Supported, Falsified, Inconclusive (instrument
+failure), or Indeterminate.
+
+AUTHORS
+Joseph A. Sprute — ERES Institute for New Age Cybernetics,
+Bella Vista, Arkansas, USA. ORCID: 0000-0001-9946-3221
+[add co-authors, affiliations, ORCID]
+
+KEYWORDS
+HOW; ROOT-HPE; Human-Performance-Enhancement; endogenous
+elevation; ecological momentary assessment; flow; moral
+elevation; HRV; EDA; ERES; 616 JAS 656 111 666 216 ~ Bioenergetics
+
+ETHICS
+Approval: [IRB / ethics board name, protocol number] obtained
+before enrollment. Written informed consent from all participants.
+This preregistration is filed before any data collection.
+
+------------------------------------------------------------
+1. RESEARCH QUESTIONS
+------------------------------------------------------------
+RQ1: Does HOW training raise the rate of H = 1 sessions relative
+     to an attention-matched active control?
+RQ2: In the HOW arm, what proportion of test sessions reach H = 1?
+RQ3: Does a blind CoE panel certify sessions reliably?
+RQ4: Does the physiology-only S2C index show convergent validity
+     with self-reported stress?
+RQ5: Does HOW raise mean in-window elevation E relative to the
+     active control?
+
+------------------------------------------------------------
+2. HYPOTHESES
+------------------------------------------------------------
+H1 (PRIMARY, confirmatory): The probability of H = 1 per test
+    session is higher in HOW than in Active Control (AC).
+    Smallest effect size of interest (SESOI): d = 0.50 on the
+    person-level H-rate (proportion of the 5 sessions with H = 1).
+H2 (benchmark): In the HOW arm, the session-level H = 1 rate is
+    ≥ .70 (point estimate), with 95% CI lower bound > .30.
+H3 (instrument): CoE certification reliability ICC(2,k) ≥ .80.
+H4 (instrument): S2C correlates with momentary stress VAS at
+    r_rm ≥ .30 (repeated-measures correlation), and person-level
+    mean S2C correlates with baseline PSS-10 at r ≥ .30.
+    (Physiology–self-report concordance is typically modest;
+    thresholds are set accordingly.)
+H5 (secondary): Mean in-window E is higher in HOW than AC,
+    d ≥ 0.50.
+
+------------------------------------------------------------
+3. STUDY DESIGN
+------------------------------------------------------------
+Design: 3-arm parallel randomized controlled trial.
+Arms:
+ (1) HOW — 7-day Purist Form (PF) training (see §5.3).
+ (2) Active Control (AC) — 7-day attention-matched program:
+     guided progressive muscle relaxation + general well-being
+     psychoeducation; identical contact time, materials format,
+     facilitator contact, and session schedule; contains no PF
+     criteria.
+ (3) Waitlist (WL) — no training during the trial; completes all
+     assessments; offered HOW training after follow-up.
+Phases (all arms):
+ - Days 1–14: Baseline EMA (4×/day) + baseline questionnaires.
+ - Days 15–21: Training (HOW or AC) / waiting (WL).
+ - Days 22–26: 5 × 30-min lab test sessions (one per day),
+   identical protocol in all arms.
+ - Day 40: Follow-up questionnaires + 1 follow-up test session
+   (exploratory durability).
+Randomization: Computer-generated, permuted blocks (size 3 or 6,
+ random), 1:1:1, stratified by baseline M (median split).
+ Allocation concealed by a third party until after baseline.
+Blinding: Participants not blind to arm content. Expectancy
+ measured (CEQ) and used as a covariate in sensitivity analysis.
+ CoE raters, outcome assessors, and analysts blind to arm.
+ Analysis code finalized on a masked dataset (arms recoded A/B/C)
+ before unblinding.
+
+------------------------------------------------------------
+4. SAMPLING PLAN
+------------------------------------------------------------
+Power: Two-sided α = .05, power = .80, d = 0.50 (HOW vs AC on
+ person-level H-rate) requires n = 64 per arm. (Note: v1.0's
+ n = 30/arm gives power ≈ .48.) Allowing 15% attrition:
+ n = 76 per arm; N = 228 randomized. The person-level test
+ ignores within-person repeated sessions, so this estimate is
+ conservative for the mixed-effects primary model.
+Inclusion: Age 18–65; fluent in study language; able to attend
+ 6 lab sessions.
+Exclusion: Current psychiatric disorder under active treatment;
+ PHQ-9 ≥ 15 or GAD-7 ≥ 15 at screening (referred to care);
+ current substance use disorder; psychoactive medication
+ affecting HRV (e.g., beta-blockers); cardiac arrhythmia;
+ pregnancy; meditation or contemplative practice > 1 hr/day.
+Recruitment: [source]. Compensation: [amount, schedule — not
+ contingent on outcomes].
+Interim analysis: One, at N = 114 completers (50%), by an
+ independent monitor, safety and instrument checks only (no
+ efficacy look). Stop if (a) adverse-event rate > 10% in any arm,
+ or (b) CoE ICC(2,k) < .60 after one rater-retraining cycle.
+Adverse event (AE): Any of: panic or dissociative episode;
+ self-reported distress ≥ baseline M_stress + 2 SD_b; participant-
+ reported harm; withdrawal for distress. Screened after every
+ session; serious AEs reported to IRB within 48 h.
+
+------------------------------------------------------------
+5. VARIABLES AND PROTOCOL
+------------------------------------------------------------
+5.1 Momentary instruments (baseline EMA AND in-window probes;
+    same items so baseline and test are on one scale)
+- PA: I-PANAS-SF positive-affect items, momentary instruction
+  (Thompson, 2007).
+- FLOW: Short Flow State Scale-2, 9 items (Jackson, Martin &
+  Eklund, 2008).
+- G_m (momentary goodness): 3 items, 1–7, authored for this
+  study, adapted from the elevation literature (Haidt, 2003;
+  Algoe & Haidt, 2009): "Right now I feel uplifted toward the
+  good"; "Right now I am acting from my own values";
+  "Right now my sense of goodness needs nothing added."
+  Reliability (ω) and factor structure reported.
+- STRESS: Stress VAS, 0–100.
+
+5.2 Baseline / follow-up questionnaires (trait-level; NOT used
+    inside the 30-minute window)
+- PSS-10 (Cohen & Williamson, 1988)
+- WHO-5 (WHO, 1998; Topp et al., 2015)
+- Strengths Use Scale (Govindji & Linley, 2007)
+- PHQ-9, GAD-7 (screening)
+- Credibility/Expectancy Questionnaire, CEQ (Devilly &
+  Borkovec, 2000) — after training day 1 and day 7.
+
+5.3 Purist Form (PF) — five preregistered criteria
+Derived clause-by-clause from Def-Rel v1.0; author confirms
+before filing:
+ PF-1 Floor named: participant states their own baseline
+      (mediocrity) state at session start.
+ PF-2 Present-bound: attention held on the current moment; no
+      planning toward external reward.
+ PF-3 Non-dependence: no seeking of external input, including
+      appeal to forces greater than self, to produce the state.
+ PF-4 Self-sourced Goodness: at least one internally generated
+      value-act or value-intention recorded.
+ PF-5 Overlay, not replacement: reality appraisal intact (post-
+      session reality-check items answered accurately).
+PF fidelity = criteria met / 5, scored by a blind rater from the
+ structured post-session report and probe responses. Fidelity
+ ≥ .80 means ≥ 4 of 5. Scored identically in all arms.
+
+5.4 Zero-external-input protocol (X)
+Session: single-occupant, sound-attenuated room; fixed lighting
+ and temperature; seated.
+Prohibited in window: phone, watch, books, music, food, drink
+ (water allowed), conversation, experimenter contact. No
+ caffeine or nicotine 2 h before the session.
+Permitted measurement contact: wearable sensors; tablet probes at
+ t = 10, 20, 30 min with fixed, content-neutral wording (declared
+ measurement, not input).
+Compliance: door/occupancy log, tablet interaction log, and a
+ post-session compliance checklist. Any breach → X = 1.
+Training (days 15–21) is preparation, not in-window input.
+
+5.5 Physiology
+- HRV-RMSSD: Polar H10 chest strap (RR intervals), 1-min epochs.
+- EDA (tonic SCL): Shimmer3 GSR+ or equivalent research-grade
+  device (Empatica E4 is discontinued).
+Physiology is standardized against a 5-min seated rest at the
+ start of each session.
+
+5.6 Operational definitions
+Baseline (per person, from 14-day EMA, ≈ 56 observations):
+ Composite C = mean[ z(PA), z(FLOW), z(G_m), −z(STRESS) ],
+  with z computed against the person's own baseline mean and SD.
+ M    = median of baseline C (the "mediocrity" floor).
+ SD_b = within-person SD of baseline C.
+In-window elevation:
+ E(t) = C computed at probe t ∈ {10, 20, 30}, using the same
+  baseline standardization.
+Physiological stress index (no self-report items):
+ S(t) = mean[ −z(RMSSD), z(SCL) ], 1-min resolution.
+ S2C  = deterministic CIELAB map of S (preregistered lookup
+  table and code), rendered as a 30-min color timeline.
+Primary outcome (per session):
+ H = 1 iff ALL of:
+  (a) E(t) ≥ M + 1·SD_b at all three probes t = 10, 20, 30;
+  (b) X = 0;
+  (c) PF fidelity ≥ .80;
+  (d) CoE certification = 1.
+ Otherwise H = 0. Computed identically in all arms.
+Secondary:
+ Ē = mean of E(10), E(20), E(30) (continuous).
+ G_m (mean of in-window probes).
+ S2C session mean.
+ PF fidelity (continuous).
+Exploratory: raw RMSSD, SCL; follow-up session H and Ē; WHO-5,
+ PSS-10, Strengths Use change baseline → follow-up.
+
+5.7 Center-of-Excellence (CoE) certification
+Panel: 3 raters, trained on a separate pilot set, no role in
+ training delivery, no conflicts of interest.
+Input per session (arm-masked, order randomized): S2C color
+ timeline, probe values with threshold line, compliance log.
+Rating: "Elevation held across the window," 1–7.
+Certification: CoE = 1 iff panel mean ≥ 5.
+Reliability: ICC(2,k) on the 1–7 ratings.
+
+------------------------------------------------------------
+6. ANALYSIS PLAN
+------------------------------------------------------------
+Primary (H1): Mixed-effects logistic regression,
+ H ~ arm + baseline-M stratum + session_index + (1 | subject),
+ contrast HOW vs AC; reported as OR with 95% CI. Single primary
+ test, α = .05 two-sided; no multiplicity correction.
+ Person-level H-rate comparison (Cohen's d) reported alongside.
+H2: Session-level H rate in HOW with cluster-robust 95% CI.
+H3: ICC(2,k), two-way random, absolute agreement, with 95% CI
+ (R package irr or psych).
+H4: Repeated-measures correlation S2C vs STRESS VAS at probe
+ times (rmcorr; Bakdash & Marusich, 2017); Pearson r between
+ person-mean S2C and baseline PSS-10.
+H5: Linear mixed model, Ē ~ arm + stratum + session_index +
+ (1 | subject); HOW vs AC, Cohen's d from model-estimated means.
+Secondary family (H2, H4, H5, other secondary contrasts incl.
+ WL): Benjamini–Hochberg FDR at q = .05.
+Missing data: Intention-to-treat on all randomized. Multiple
+ imputation by chained equations, m = 20, including arm, stratum,
+ baseline M, CEQ. Sessions breaching X are H = 0 in ITT.
+Sensitivity: (a) per-protocol (X = 0 sessions, ≥ 4 training
+ days); (b) CEQ expectancy as covariate; (c) H without the CoE
+ criterion (d); (d) H with ≥ 2 of 3 probes.
+Software: R 4.x (lme4, irr, psych, rmcorr, mice); code and
+ masked-data dry run posted before unblinding.
+
+------------------------------------------------------------
+7. DECISION RULES (preregistered outcome classes)
+------------------------------------------------------------
+Step 1 — Instrument validity check:
+ INCONCLUSIVE (instrument failure) if CoE ICC(2,k) < .60, OR
+ the 95% CI upper bound of S2C–STRESS r_rm < .20.
+ → No verdict on HOW; the measurement failed, not the theory.
+Step 2 — If instruments are valid:
+ SUPPORTED if H1 is significant (HOW > AC) AND H2 is met
+  (H rate ≥ .70, lower CI > .30).
+ FALSIFIED if HOW session H rate < .30, OR the HOW vs AC effect
+  is d < .20 with 90% CI upper bound < .50 (equivalence-type
+  test against the SESOI).
+ INDETERMINATE otherwise (e.g., H rate between .30 and .70, or
+  an effect too imprecise to fall in either class). Reported as
+  such, with estimates; no claim either way.
+
+------------------------------------------------------------
+8. OTHER
+------------------------------------------------------------
+Limitations:
+ - X = 0 is enforced and logged, not metaphysically proven;
+   probes are a declared minimal measurement contact.
+ - PF is author-defined; PF criteria are fixed here before data.
+ - CoE independence is structural (blinding, no COI), not
+   institutional accreditation.
+ - S2C is a physiological proxy for stress, not a direct measure
+   of "Goodness."
+ - H is binary by decision; continuous Ē is reported throughout.
+ - Participants cannot be blind to arm; expectancy is measured.
+ - G_m items are new; psychometrics reported, not assumed.
+Deviations: Time-stamped deviations log, reported in full.
+Conflicts of interest: The first author originated the HOW
+ framework (ERES corpus). Mitigations: blind raters and analysts,
+ masked-data analysis, independent safety monitor, open data
+ and code. [Declare any further interests.]
+
+------------------------------------------------------------
+9. DATA AVAILABILITY
+------------------------------------------------------------
+De-identified data, code, S2C lookup table, PF scoring manual,
+ CoE rater manual, and all materials: OSF repository.
+Embargo: 12 months post-publication (materials and code public
+ at registration).
+Analysis scripts: R, version-controlled; commit hash recorded at
+ unblinding.
+
+------------------------------------------------------------
+10. CREDITS
+------------------------------------------------------------
+Contributor roles (CRediT taxonomy; Brand et al., 2015):
+ Joseph A. Sprute (ORCID 0000-0001-9946-3221) —
+  Conceptualization (HOW ≡ ROOT-HPE, Def-Rel v1.0; Purist Form);
+  Methodology; Writing – original draft (v1.0);
+  Writing – review & editing (v2.0, v3.0); Project administration;
+  Supervision.
+ [Co-author name, ORCID] — [roles, e.g., Formal analysis;
+  Investigation; Data curation; Resources].
+ [Independent safety monitor] — [role; not an author unless
+  criteria met].
+ [CoE panel raters ×3] — Acknowledged; blind to arm; not authors.
+Institution: ERES Institute for New Age Cybernetics, Bella Vista,
+ Arkansas, USA (est. 2012).
+Funding: [none / source, grant number]. Funders have no role in
+ design, analysis, or reporting.
+AI assistance: Claude (Anthropic) assisted in revising v1.0 into
+ v2.0 and v3.0 (methodological critique, power calculation,
+ measurement redesign, reference assembly). All content was
+ reviewed and approved by the author, who takes full
+ responsibility. AI tools are not authors.
+Version history:
+ v1.0 — Initial preregistration draft (J. A. Sprute).
+ v2.0 — Full revision: momentary instruments, corrected power
+        (N = 228), physiology-only S2C, single primary outcome,
+        defined PF criteria, X = 0 protocol, CoE rater task,
+        four-class decision rules, ethics and AE definitions.
+ v3.0 — Added Credits, expanded References, License.
+
+------------------------------------------------------------
+11. REFERENCES
+------------------------------------------------------------
+A. Framework source
+Sprute, J. A. (2026). HOW ≡ ROOT-HPE (ERES Def-Rel v1.0).
+ ERES Institute for New Age Cybernetics. [Unpublished definition;
+ add deposit DOI when available.]
+Sprute, J. A. (2026). ERES corpus [Data set]. Zenodo.
+ https://doi.org/10.5281/zenodo.21209870
+
+B. Psychological instruments
+Algoe, S. B., & Haidt, J. (2009). Witnessing excellence in action:
+ The "other-praising" emotions of elevation, gratitude, and
+ admiration. Journal of Positive Psychology, 4(2), 105–127.
+Cohen, S., Kamarck, T., & Mermelstein, R. (1983). A global measure
+ of perceived stress. Journal of Health and Social Behavior,
+ 24(4), 385–396.
+Cohen, S., & Williamson, G. (1988). Perceived stress in a
+ probability sample of the United States. In S. Spacapan &
+ S. Oskamp (Eds.), The Social Psychology of Health (pp. 31–67).
+ Sage.
+Devilly, G. J., & Borkovec, T. D. (2000). Psychometric properties
+ of the credibility/expectancy questionnaire. Journal of Behavior
+ Therapy and Experimental Psychiatry, 31(2), 73–86.
+Govindji, R., & Linley, P. A. (2007). Strengths use, self-
+ concordance and well-being. International Coaching Psychology
+ Review, 2(2), 143–153.
+Haidt, J. (2003). Elevation and the positive psychology of
+ morality. In C. L. M. Keyes & J. Haidt (Eds.), Flourishing:
+ Positive Psychology and the Life Well-Lived (pp. 275–289). APA.
+Jackson, S. A., Martin, A. J., & Eklund, R. C. (2008). Long and
+ short measures of flow: The construct validity of the FSS-2,
+ DFS-2, and new brief counterparts. Journal of Sport & Exercise
+ Psychology, 30(5), 561–587.
+Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The
+ PHQ-9: Validity of a brief depression severity measure. Journal
+ of General Internal Medicine, 16(9), 606–613.
+Shiffman, S., Stone, A. A., & Hufford, M. R. (2008). Ecological
+ momentary assessment. Annual Review of Clinical Psychology, 4,
+ 1–32.
+Spitzer, R. L., Kroenke, K., Williams, J. B. W., & Löwe, B. (2006).
+ A brief measure for assessing generalized anxiety disorder:
+ The GAD-7. Archives of Internal Medicine, 166(10), 1092–1097.
+Thompson, E. R. (2007). Development and validation of an
+ internationally reliable short-form of the Positive and
+ Negative Affect Schedule (PANAS). Journal of Cross-Cultural
+ Psychology, 38(2), 227–242.
+Topp, C. W., Østergaard, S. D., Søndergaard, S., & Bech, P. (2015).
+ The WHO-5 Well-Being Index: A systematic review of the
+ literature. Psychotherapy and Psychosomatics, 84(3), 167–176.
+Watson, D., Clark, L. A., & Tellegen, A. (1988). Development and
+ validation of brief measures of positive and negative affect:
+ The PANAS scales. Journal of Personality and Social Psychology,
+ 54(6), 1063–1070.
+World Health Organization (1998). Wellbeing measures in primary
+ health care: The DepCare Project. WHO Regional Office for Europe.
+
+C. Physiology
+Boucsein, W. (2012). Electrodermal Activity (2nd ed.). Springer.
+Shaffer, F., & Ginsberg, J. P. (2017). An overview of heart rate
+ variability metrics and norms. Frontiers in Public Health, 5, 258.
+Task Force of the European Society of Cardiology and the North
+ American Society of Pacing and Electrophysiology (1996). Heart
+ rate variability: Standards of measurement, physiological
+ interpretation, and clinical use. Circulation, 93(5), 1043–1065.
+
+D. Statistics and design
+Bakdash, J. Z., & Marusich, L. R. (2017). Repeated measures
+ correlation. Frontiers in Psychology, 8, 456.
+Benjamini, Y., & Hochberg, Y. (1995). Controlling the false
+ discovery rate: A practical and powerful approach to multiple
+ testing. Journal of the Royal Statistical Society: Series B,
+ 57(1), 289–300.
+Cohen, J. (1988). Statistical Power Analysis for the Behavioral
+ Sciences (2nd ed.). Lawrence Erlbaum.
+Koo, T. K., & Li, M. Y. (2016). A guideline of selecting and
+ reporting intraclass correlation coefficients for reliability
+ research. Journal of Chiropractic Medicine, 15(2), 155–163.
+Lakens, D. (2017). Equivalence tests: A practical primer for
+ t tests, correlations, and meta-analyses. Social Psychological
+ and Personality Science, 8(4), 355–362.
+Rubin, D. B. (1987). Multiple Imputation for Nonresponse in
+ Surveys. Wiley.
+Shrout, P. E., & Fleiss, J. L. (1979). Intraclass correlations:
+ Uses in assessing rater reliability. Psychological Bulletin,
+ 86(2), 420–428.
+
+E. Software
+Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting
+ linear mixed-effects models using lme4. Journal of Statistical
+ Software, 67(1), 1–48.
+Gamer, M., Lemon, J., Fellows, I., & Singh, P. irr: Various
+ coefficients of interrater reliability and agreement
+ [R package]. CRAN.
+R Core Team. R: A language and environment for statistical
+ computing [Version 4.x]. R Foundation for Statistical Computing.
+Revelle, W. psych: Procedures for psychological, psychometric,
+ and personality research [R package]. CRAN.
+van Buuren, S., & Groothuis-Oudshoorn, K. (2011). mice:
+ Multivariate imputation by chained equations in R. Journal of
+ Statistical Software, 45(3), 1–67.
+(Exact package versions recorded in the analysis repository.)
+
+F. Reporting and open science
+Brand, A., Allen, L., Altman, M., Hlava, M., & Scott, J. (2015).
+ Beyond authorship: Attribution, contribution, collaboration,
+ and credit. Learned Publishing, 28(2), 151–155.
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T.
+ (2018). The preregistration revolution. Proceedings of the
+ National Academy of Sciences, 115(11), 2600–2606.
+
+------------------------------------------------------------
+12. LICENSE
+------------------------------------------------------------
+Copyright © 2026 Joseph A. Sprute, ERES Institute for New Age
+ Cybernetics.
+
+Preregistration text, protocol, PF scoring manual, CoE rater
+ manual, S2C lookup table, and other study materials:
+ Creative Commons Attribution 4.0 International (CC BY 4.0).
+ https://creativecommons.org/licenses/by/4.0/
+ You may share and adapt for any purpose, provided you give
+ appropriate credit, link to the license, and indicate changes.
+ Attribution: Sprute, J. A. (2026). Operational Validation of
+ HOW ≡ ROOT-HPE (ERES Def-Rel v1.0) — OSF Preregistration v3.0.
+ [OSF DOI]. CC BY 4.0.
+
+Analysis code: MIT License.
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions: The above copyright notice and this permission
+ notice shall be included in all copies or substantial portions
+ of the Software.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+
+De-identified data (after embargo): CC0 1.0 Universal (public
+ domain dedication). Citation requested, not required.
+ https://creativecommons.org/publicdomain/zero/1.0/
+
+Third-party instruments: PANAS / I-PANAS-SF, SFSS-2, PSS-10,
+ WHO-5, PHQ-9, GAD-7, CEQ, and Strengths Use Scale remain under
+ their owners' terms. They are cited, not relicensed; item text
+ is reproduced in study materials only where those terms permit.
+============================================================

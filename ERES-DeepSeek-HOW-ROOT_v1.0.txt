@@ -1,0 +1,125 @@
+============================================================
+OSF PREREGISTRATION
+============================================================
+
+TITLE
+Operational Validation of HOW ≡ ROOT-HPE (ERES Def-Rel v1.0)
+
+DESCRIPTION
+This study tests whether HOW, defined as the root method of
+Human-Performance-Enhancement, is empirically observable under
+strict operational definitions. HOW is declared operating (H = 1)
+when a self produces endogenous elevation above its own mediocrity
+baseline across a fixed 30-minute window with zero external input,
+certified by a blind Center-of-Excellence via a stress-to-color
+readout. This is a falsifiable specification; it does not assume
+the framework is true.
+
+AUTHORS
+Joseph A. Sprute (anchor: 616 JAS 656 111 666 216 ~ Bioenergetics)
+[add co-authors, affiliations, ORCID]
+
+------------------------------------------------------------
+1. RESEARCH QUESTIONS
+------------------------------------------------------------
+RQ1: Can H = 1 be observed reliably under the defined protocol?
+RQ2: Does endogenous elevation (E) hold ≥ M + 1 SD across W?
+RQ3: Does a blind Center-of-Excellence certify consistently?
+RQ4: Does the stress-to-color readout (S2C) track PSS?
+RQ5: Does the HOW condition outperform an active control?
+
+------------------------------------------------------------
+2. HYPOTHESES
+------------------------------------------------------------
+H1: H = 1 in ≥ 70% of HOW-condition test sessions.
+H2: In H = 1 sessions, E(t) ≥ M + 1 SD for ≥ 90% of W.
+H3: CoE certification ICC(2,k) ≥ .80.
+H4: S2C correlates with PSS at r ≥ .70.
+H5: HOW > active control on E, d ≥ 0.50.
+
+------------------------------------------------------------
+3. STUDY DESIGN
+------------------------------------------------------------
+Design: 3-arm randomized controlled trial.
+Arms: (1) HOW, (2) Active control, (3) Waitlist.
+Phases: 14-day baseline; 7-day Purist Form training;
+5 × 30-min test sessions; 14-day follow-up.
+Randomization: Block, 1:1:1, stratified by baseline M.
+Blinding: Participants not blind; raters and analysts blind.
+
+------------------------------------------------------------
+4. SAMPLING PLAN
+------------------------------------------------------------
+N = 90 (30/arm). Power = .80, alpha = .05, d = 0.50.
+Inclusion: 18–65; no psychiatric diagnosis; no substance use.
+Exclusion: Meditation practice > 1 hr/day.
+Recruitment: [source]. Stopping: interim at N = 45;
+stop if adverse events > 10% or CoE ICC < .60.
+
+------------------------------------------------------------
+5. VARIABLES
+------------------------------------------------------------
+Primary: H (binary); E(t) (continuous).
+Secondary: G (goodness); S2C (stress-to-color);
+PF fidelity; CoE certification (1/0).
+Exploratory: HRV-RMSSD; EDA; follow-up durability.
+Instruments:
+- PANAS (Watson et al., 1988)
+- WHO-5 (WHO, 1998)
+- FSS-2 (Jackson & Eklund, 2002)
+- PSS-10 (Cohen et al., 1983)
+- VIA-IS (Peterson & Seligman, 2004)
+- Moral Elevation Scale (Haidt, 2003)
+- EMA 4x/day (Shiffman et al., 2008)
+- HRV-RMSSD (Polar H10 / Empatica E4)
+- EDA (Empatica E4)
+
+Operational definitions:
+M = 14-day median composite.
+E(t) = mean of z(PA), z(WHO5), z(FSS2), z(G), -z(PSS).
+G = .50*z(prosocial) + .50*z(VIA strengths use).
+S = z(PSS) + z(HRV-RMSSD reversed) + z(EDA).
+S2C = CIELAB map of normalized S.
+PF fidelity = criteria correctly applied / 5.
+H = 1 iff E(t) ≥ M + 1SD for all t in W; X = 0;
+CoE = 1; G ≥ G-bar + 1SD; PF fidelity ≥ .80.
+
+------------------------------------------------------------
+6. ANALYSIS PLAN
+------------------------------------------------------------
+Primary: Mixed-effects logistic regression,
+H ~ condition + (1|subject).
+Secondary: Linear mixed models for E(t), G, S2C.
+Reliability: ICC(2,k) for CoE.
+Correlation: Pearson r for S2C vs PSS.
+Effect size: Cohen's d, HOW vs active control.
+Missing data: Multiple imputation, m = 20.
+Software: R 4.x (lme4, irr, psych) or Python 3.x.
+Inference: alpha = .05, two-tailed; corrections for
+multiple comparisons via Benjamini-Hochberg.
+
+------------------------------------------------------------
+7. FALSIFICATION CRITERIA
+------------------------------------------------------------
+HOW is falsified if:
+- H = 1 in < 30% of HOW sessions;
+- CoE ICC < .60;
+- S2C vs PSS r < .40;
+- No difference vs active control, d < 0.20.
+
+------------------------------------------------------------
+8. OTHER
+------------------------------------------------------------
+Limitations: X = 0 is enforced, not metaphysically proven;
+PF is self-authored; CoE independence is structural;
+S2C is a proxy; H is binary by decision.
+Deviations log: maintained during study.
+Conflicts of interest: [declare].
+
+------------------------------------------------------------
+9. DATA AVAILABILITY
+------------------------------------------------------------
+De-identified data, code, and materials: OSF repository.
+Embargo: 12 months post-publication.
+Analysis scripts: R/Python, version-controlled.
+============================================================
